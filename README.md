@@ -11,8 +11,11 @@
 
 ## Поиск осуществляется через совпадения слов или словоформ с последующей оценкой LLM контекста упоминания. 
 Результаты можно найти по ссылке: https://docs.google.com/spreadsheets/d/1ez0kcEPb7fG8E_0f7F5LrCfPg0fsiuQpH1AMKid0gX8/edit?gid=671773976#gid=671773976
+
 Прошлые результаты 2025: https://docs.google.com/spreadsheets/d/1H4c2ApuLdaliCj3b2HDTVYmmjIFCTOuWzcS6LjxclGM/edit?usp=sharing
+
 Прошлые результаты 2024: https://docs.google.com/spreadsheets/d/1C0-pqnQktmtxNsOc3cU8fobhCf_nr1RKxfv1dNGzDTQ/edit?gid=1018405073#gid=1018405073
+
 
 ### Общая статистика (на 03 декабря 2025)
 
