@@ -1,6 +1,26 @@
 # Anal_Russia_Klinik2025  
 [![Статистика клинорекомендаций](https://img.shields.io/badge/Клинорекомендаций-560-success?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTIgMkwzIDEySDIxTDEyIDIyWiIvPjwvc3ZnPg==)](https://github.com/TryDotAtwo/Anal_Russia_Klinik2025)
 
+Почему я считаю важным что-то сделать? Потому что, например, обнаружил вот такие штуки:
+
+1) Уровень убедительности рекомендаций А (уровень достоверности доказательств – 1): Данные мета-анализа и клинических исследований подтверждают нейропротекторное действие S01XA - другие препараты, применяемые в офтальмологии (полипептиды сетчатки глаз скота) (этилметилгидроксипиридина сукцинат**) ((в расстрельном списке)) https://cr.minzdrav.gov.ru/view-cr/96_2
+
+2) Злокачественные новообразования полости рта | B1 | Рефлексотерапия | https://cr.minzdrav.gov.ru/view-cr/164_2
+
+3) Менопауза и климактерическое состояние у женщины | А1 | Акупунктура | https://cr.minzdrav.gov.ru/view-cr/117_2
+
+4) Рак пищевода и кардии | B1 | Акупунктура | https://cr.minzdrav.gov.ru/view-cr/237_6
+
+5) Хондроитин - А1 https://cr.minzdrav.gov.ru/view-cr/870_1
+
+6) Анальгин - А3 https://cr.minzdrav.gov.ru/view-cr/652_2
+
+7) Липоевая кислота; Тиоктовая кислота - В1  https://cr.minzdrav.gov.ru/view-cr/895_1
+
+8) Винпоцетин - А2 https://cr.minzdrav.gov.ru/view-cr/814_1
+
+
+
 
 **Парсер и анализатор российских клинических рекомендаций и протоколов ведения больных (2024–2026)**  
 Большая работа по сбору, очистке и классификации упоминаний лекарственных средств в официальных российских клинических рекомендациях.
