@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aho host-word filters</title>
+<style>
+body{margin:0;font:14px/1.35 Arial,sans-serif;background:#f6f7f9;color:#17202a}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #d6dbe1;padding:10px 14px;z-index:2}
+main{padding:14px;display:grid;grid-template-columns:1fr 340px;gap:14px}
+.controls{display:grid;grid-template-columns:repeat(8,minmax(110px,1fr));gap:8px;align-items:end}
+label{display:grid;gap:4px;font-size:12px;color:#53606d}input,select,button{height:32px;border:1px solid #b9c2cc;background:#fff;border-radius:6px;padding:0 9px}
+button{cursor:pointer;background:#eef2f6}.primary{background:#1f6feb;color:#fff;border-color:#1f6feb}.danger{background:#fff1f0;color:#a8071a;border-color:#ffa39e}
+.pager{display:flex;gap:8px;align-items:center;margin:0 0 10px 0}.pager button{min-width:72px}
+.meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;font-size:12px;color:#53606d}.panel{background:#fff;border:1px solid #d6dbe1;border-radius:8px}
+.section-title{margin:0;padding:10px;background:#eef2f6;border-bottom:1px solid #d6dbe1;font-size:15px}.row{padding:10px;border-bottom:1px solid #edf0f3}.row:last-child{border-bottom:0}.row h3{margin:0 0 6px;font-size:16px}.badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.badge{padding:2px 6px;border-radius:999px;background:#eef2f6;font-size:12px}.hosts{display:grid;gap:6px}.host{display:grid;grid-template-columns:1fr 70px 76px 86px;gap:6px;align-items:center}
+.word{font-family:Consolas,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.inside{color:#9a3412}.filtered{opacity:.55;text-decoration:line-through}
+aside{position:sticky;top:116px;align-self:start;padding:10px;max-height:calc(100vh - 134px);overflow:auto}.filters{display:grid;gap:6px;margin-top:8px}.filter{display:grid;grid-template-columns:1fr 64px;gap:6px}
+@media(max-width:980px){main{grid-template-columns:1fr}.controls{grid-template-columns:1fr 1fr}aside{position:static;max-height:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="controls">
+<label>canonical/search<input id="q" placeholder="РђРіСЂРё"></label>
+<label>host_word<input id="host" placeholder="РїР°СЂР°РіСЂРёРїРї"></label>
+<label>source<select id="source"><option value="">all</option><option>blacklist</option><option>marker</option><option>mediq</option></select></label>
+<label>inside<select id="inside"><option value="any">any</option><option value="inside">inside only</option><option value="whole">whole only</option></select></label>
+<label>filter<select id="filtered"><option value="all">all</option><option value="active">not filtered</option><option value="filtered">filtered</option></select></label>
+<label>row limit<input id="rowLimit" value="100"></label>
+<label>host limit<input id="hostLimit" value="10000"></label>
+<button id="search" class="primary">Search</button>
+</div>
+<div class="meta" id="meta"></div>
+</header>
+<main>
+<section>
+<div class="pager"><button id="prev">Prev</button><button id="next">Next</button><span id="status"></span></div>
+<div class="panel" id="results"></div>
+</section>
+<aside class="panel">
+<button id="rebuild" class="primary">Apply filters to JSON</button>
+<div class="meta" id="paths"></div>
+<h3>Host-word filter list</h3>
+<label>filter list search<input id="filterQ"></label>
+<div class="pager"><button id="filterPrev">Prev</button><button id="filterNext">Next</button><span id="filterStatus"></span></div>
+<div class="filters" id="filters"></div>
+</aside>
+</main>
+<script>
+let state={},offset=0,filterOffset=0,lastData={total:0,limit:100,items:[]},lastFilters={total:0,limit:200,host_words:[]};
+const $=id=>document.getElementById(id);
+async function api(path,opts){const r=await fetch(path,opts);if(!r.ok)throw new Error(await r.text());return r.json();}
+async function loadState(){state=await api('/api/state');$('meta').textContent=`search_words=${state.summary.search_word_count||0}; matches=${state.summary.total_match_count||0}; filters=${state.filter_host_word_count}; shards=${state.filter_shard_count}`;
+$('paths').innerHTML=`compact=${state.compact_size_bytes} bytes<br>filtered=${state.filtered_size_bytes} bytes<br>dirty=${state.filter_dirty}<br>removed_est=${state.estimated_removed_match_count}<br>${state.paths.filters_parts}<br>${state.paths.filtered}`;await loadFilters();}
+function rowLimit(){return Math.max(1,Math.min(500,Number($('rowLimit').value)||100));}
+function queryObject(){return {q:$('q').value,host:$('host').value,source:$('source').value,inside:$('inside').value,filtered:$('filtered').value};}
+function params(){return new URLSearchParams({...queryObject(),offset,limit:rowLimit(),host_limit:$('hostLimit').value||10000});}
+async function search(){setStatus('loading');$('search').disabled=true;try{lastData=await api('/api/search?'+params());renderResults(lastData);const shown=lastData.items.length||0;setStatus(`rows ${lastData.offset+1}-${Math.min(lastData.offset+shown,lastData.total)} / ${lastData.total}; drugs=${lastData.drug_total}`);}catch(e){setStatus('error: '+e.message);}finally{$('search').disabled=false;}}
+function renderResults(data){const drugs=sectionHtml('Препараты',data.items||[]);$('results').innerHTML=drugs||'<div class="row">no results</div>';bindHostButtons();}
+function sectionHtml(title,rows){return rows.length?`<h2 class="section-title">${title} (${rows.length})</h2>`+rows.map(rowHtml).join(''):'';}
+function rowHtml(row){return `<div class="row" data-source="${escAttr(row.source)}" data-term-id="${escAttr(row.term_id||'')}" data-search-word="${escAttr(row.search_word)}"><h3>${esc(row.canonical)} / ${esc(row.search_word)}</h3>
+<div class="badges"><span class="badge">${esc(row.source)}</span><span class="badge">drug</span><span class="badge">matches=${row.match_count}</span><span class="badge">inside=${row.inside_word_match_count}</span><span class="badge">hosts=${row.host_words_count}</span><span class="badge">shown=${row.shown_host_words_count}/${row.matching_host_words_count}</span><button class="primary" data-row-bulk="1">Add this drug host_words</button></div>
+<div class="hosts">${row.host_words.map(hostHtml).join('')}</div></div>`;}
+function hostHtml(h){const cls=(h.filtered?' filtered':'')+(h.inside_word?' inside':'');return `<div class="host${cls}"><div class="word" title="${esc(h.host_word)}">${esc(h.host_word)}</div><div>count=${h.count}</div><div>${h.inside_word?'inside':'whole'}</div><button data-host="${escAttr(h.host_word)}" data-enabled="${h.filtered?'0':'1'}">${h.filtered?'Remove':'Filter'}</button></div>`;}
+function bindHostButtons(){document.querySelectorAll('button[data-host]').forEach(b=>b.onclick=async()=>{b.disabled=true;try{const data=await api('/api/filter',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({host_word:b.dataset.host,enabled:b.dataset.enabled==='1'})});markHostWord(b.dataset.host,data.enabled);await loadState();markHostWord(b.dataset.host,data.enabled);setStatus(`filter_changed=${data.host_word}; filters=${data.filter_host_word_count}`);}catch(e){setStatus('filter error: '+e.message);b.disabled=false;}});}
+document.addEventListener('click',async e=>{const b=e.target.closest('button[data-row-bulk]');if(!b)return;b.disabled=true;const row=b.closest('.row');const query=queryObject();query.filtered='active';try{const data=await api('/api/filter-row',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({row:{source:row.dataset.source,term_id:row.dataset.termId,search_word:row.dataset.searchWord},query})});markRowHosts(row,true);await loadState();markRowHosts(row,true);setStatus(`row_bulk_added=${data.changed_count}; collected=${data.collected_host_word_count}; filters=${data.filter_host_word_count}`);}catch(err){setStatus('row bulk error: '+err.message);}finally{b.disabled=false;}});
+async function loadFilters(){lastFilters=await api('/api/filters?'+new URLSearchParams({q:$('filterQ').value,offset:filterOffset,limit:200}));renderFilters(lastFilters);}
+function renderFilters(data){const list=data.host_words||[];$('filterStatus').textContent=`${data.offset+1}-${Math.min(data.offset+list.length,data.total)} / ${data.total}`;$('filters').innerHTML=list.map(w=>`<div class="filter"><span class="word" title="${esc(w)}">${esc(w)}</span><button class="danger" data-remove="${escAttr(w)}">Remove</button></div>`).join('')||'<span>empty</span>';document.querySelectorAll('button[data-remove]').forEach(b=>b.onclick=async()=>{const word=b.dataset.remove;const data=await api('/api/filter',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({host_word:word,enabled:false})});markHostWord(word,false);await loadState();markHostWord(word,false);setStatus(`filter_removed=${data.host_word}; filters=${data.filter_host_word_count}`);});}
+function markHostWord(hostWord,enabled){const key=norm(hostWord);document.querySelectorAll('button[data-host]').forEach(b=>{if(norm(b.dataset.host)===key)setHostButton(b,enabled);});}
+function markRowHosts(row,enabled){row.querySelectorAll('button[data-host]').forEach(b=>setHostButton(b,enabled));}
+function setHostButton(button,enabled){button.disabled=false;button.dataset.enabled=enabled?'0':'1';button.textContent=enabled?'Remove':'Filter';const host=button.closest('.host');if(host)host.classList.toggle('filtered',enabled);}
+function norm(s){return String(s).trim().toLocaleLowerCase().replace(/\s+/g,' ');}
+function setStatus(text){$('status').textContent=text;}
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+function escAttr(s){return esc(s).replace(/`/g,'&#96;');}
+$('search').onclick=()=>{offset=0;search();};
+$('next').onclick=()=>{if(offset+lastData.limit<lastData.total){offset+=lastData.limit;search();}};
+$('prev').onclick=()=>{offset=Math.max(0,offset-lastData.limit);search();};
+$('filterNext').onclick=()=>{if(filterOffset+lastFilters.limit<lastFilters.total){filterOffset+=lastFilters.limit;loadFilters();}};
+$('filterPrev').onclick=()=>{filterOffset=Math.max(0,filterOffset-lastFilters.limit);loadFilters();};
+document.querySelectorAll('input,select').forEach(el=>el.addEventListener('keydown',e=>{if(e.key==='Enter'){offset=0;search();}}));
+$('filterQ').addEventListener('input',debounce(()=>{filterOffset=0;loadFilters();},180));
+$('rebuild').onclick=async()=>{setStatus('applying filters to json');await api('/api/rebuild-filtered',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});await loadState();setStatus('filtered json rebuilt');};
+function debounce(fn,ms){let t;return()=>{clearTimeout(t);t=setTimeout(fn,ms);};}
+loadState().then(()=>{setStatus('ready; press Search');$('results').innerHTML='<div class="row">Введите запрос и нажмите Search.</div>';}).catch(e=>{$('results').textContent=e.message;});
+</script>
+</body>
+</html>

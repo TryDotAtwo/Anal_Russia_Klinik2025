@@ -1,0 +1,1007 @@
+{
+  "generated_at": "2026-04-30T16:13:55.713075+00:00",
+  "change_count": 40,
+  "changes": [
+    {
+      "sample_index": 1,
+      "block_id": "block:7e97fee0a6d3912a",
+      "old_gold": {
+        "label": "contraindication",
+        "target_kind": "drug",
+        "recommendation_strength": "C",
+        "evidence_level": "5",
+        "evidence_quote": "?? ????????????? ?????????? ??????????? ? ??????????",
+        "reason": "explicit not recommended therapy",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 1
+      },
+      "new_gold": {
+        "label": "contraindication",
+        "target_kind": "drug",
+        "recommendation_strength": "C",
+        "evidence_level": "5",
+        "evidence_quote": "ии онасемноген абепарвовека необходима иммуномодуляция глюкокортикоида (#преднизолон** перорально из расчета 1 мг/кг/сут или эквивалентная доза другого глюкокортикоида) [101,105-107].  Не рекомендуется применение комбинированной терапии (назначение патогенетической терапии после генозаместительной терапии) или одновременное применение 2 препаратов патогенетической терапии с одинаковой точкой приложения — ген SMN2 (например, 34 нусинерсен** и рисдиплам**), также не рекомендуется применение препаратов нусинерсен** и",
+        "reason": "user-confirmed valid Diplam substring of risdiplam; explicit not-recommended therapy, C5 evidence",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 1,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 2,
+      "block_id": "block:d156d6d2f0a57690",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????????? ?????? ?? ????? ???-1",
+        "reason": "pathogenesis/general definition, not recommendation",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 2
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "немия, МКН-ХБП и резистентность к гормонам, опосредующим рост ребенка [29, 30, 31, 32]. Анаболический эффект ГР на уровне тканей реализуется через инсулиноподобный фактор роста 1 (ИФР-1). ХБП – это состояние нечувствительности к ГР, которое характеризуется дефицитом функционального ИФР-1 из-за снижения экспрессии рецептора ГР в органах-мишенях, таких как печень, и нарушения передачи сигналов рецептора ГР через Янус-киназу2, являющейся сигнальным преобразователем и активатором пути транскрипции 5 из-за и",
+        "reason": "pathogenesis/general definition, not recommendation",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 2,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 3,
+      "block_id": "block:b270f87c2facb0b2",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????????? ??????????",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 3
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "ает восстановление проходимости дыхательных путей, что является одним из ключевых моментов оказания неотложной помощи. Самое главное — это правильно диагностировать обструкцию или потенциальную обструкцию дыхательных путей, устранить ее и поддерживать дыхание пациента. Никакая экстренная медицинская ситуация, кроме кардиопульмонального шока, не угрожает жизни так, как нарушение проходимости дыхательных пут",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 3,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 4,
+      "block_id": "block:010340027c564110",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????? ?????????????? ?????????? ??????? ?? 1 ?????",
+        "reason": "preventive intervention statement",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 4
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "твия эффекта от проводимой интенсивной терапии и ухудшении состояния женщины показано искусственное прерывание беременности (аборт). Решение принимает врачебный консилиум с учетом состояния и пожелания женщины. Планирование беременности, предгравидарное обследование и подготовка, своевременное лечение гинекологических и экстрагенитальных заболеваний, прием поливитаминных комплексов минимум за 1 месяц до планируемой беременности имеют профилактический эффект в отношении развития рвоты беременных. Приложение Г1 - ГN.",
+        "reason": "user-confirmed Polyvit/multivitamin preventive intervention; no local evidence level found",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 4,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 5,
+      "block_id": "block:cf732de3c39ecb98",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????? ????????????? ??????????, ?????????? L-????????",
+        "reason": "treatment approach",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 5
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "ев, единых протоколов лечения 3ГМКоАЛД не существует. На основании патогенеза заболевания, основными терапевтическими подходами являются прием лекарственных препаратов, содержащих L-карнитин (левокарнитин), а также применение диеты с ограничением лейцина и/или натурального белка с добавлением специализированных продуктов питания, не содержащих лейцин. Некоторые специалисты рекомендуют также ограничивать поступление жиров",
+        "reason": "treatment approach",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 5,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 6,
+      "block_id": "block:d5b1311a25b3a80c",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????????? ??????",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 6
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "етом их давности), оценки соматического статуса. Подробное физикальное обследование пациентов с ОКР направлено на выявление повреждений кожного покрова и слизистых, а также других потенциальных рисков для здоровья, которые могут быть связаны выполнением навязчивых действий и ритуалов [1 – 3, 34, 37]. Уровень достоверности доказательств – 5, Уровень убедительности рекомендации – С. 3. Лабораторные диагности",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 6,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 7,
+      "block_id": "block:bd063171f834f92c",
+      "old_gold": {
+        "label": "contraindication",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "?? ????????????? ?????????, ?????????? ????????? ??????",
+        "reason": "explicit not recommended drug group",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 7
+      },
+      "new_gold": {
+        "label": "contraindication",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "читывать побочные эффекты, в первую очередь воздействие на желудочно-кишечный тракт и риск кровотечений; o не рекомендуются для купирования приступов М любые препараты, содержащие метамизол натрия в связи с риском развития агранулоцитоза; опиоидные анальгетики и лекарственные препараты с обезболивающим действием, содержащие кодеин или барбитураты (в связи с высоким риском лекарственного абузуса и ЛИГБ); o",
+        "reason": "explicit not recommended drug group",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 7,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 8,
+      "block_id": "block:758d89cc5ad6b007",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "A",
+        "evidence_level": "3",
+        "evidence_quote": "??????????? 200 ??",
+        "reason": "drug regimen table/notes",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 8
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "C",
+        "evidence_level": "4",
+        "evidence_quote": "-Даклатасвир** + Нарлапревир** + Ритонавир** [109] Уровень убедительности рекомендаций С (уровень достоверности доказательств – 4)",
+        "reason": "regimen table note is governed by the explicit DAK+NRV+ritonavir C4 regimen statement",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 8,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 9,
+      "block_id": "block:24f962002b797b11",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "??? - ????????????? ???????????",
+        "reason": "abbreviation list",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 9
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "льфа ХБП - хроническая болезнь почек ХС - холестерин ХСН - хроническая сердечная недостаточность ЦП - цирроз печени ЩФ - щелочная фосфатаза ЭГДС - эзофагогастродуоденоскопия ЭФЛ - эссенциальные фосфолипиды (фосфолипиды) АРЯ1 (АзрагЩЩ А т т о 1гапзГега5е 1о Р1а1е1е1; Яайо 1п<3ех) - отношение аспартатаминотрансаминазы к количеству тромбоцитов А1ЖОС (Агеа Ш ёег Яесе1уег Орегабп§ СЬагас1епзбс Сигуе) - показатель для оценки характеристик к",
+        "reason": "abbreviation list",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 9,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 10,
+      "block_id": "block:5c2d42c63da3797a",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????????? ?????? ? ?????",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 10
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "тельств – 5) Комментарии: решение о назначении послеоперационной терапии принимается исходя из состояния пациента, опухолевой нагрузки, наличия симптомов прогрессирования с учетом потенциальных пользы и риска для пациента. 3.3. Лекарственная терапия пациентов с неоперабельными НЭО всех локализаций 3.3.1 Высокодифференцированные нейроэндокринные опухоли G , G2 Рекомендуется пациентам с неоперабельными высок",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 10,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 11,
+      "block_id": "block:d250eec39a7f3951",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "B",
+        "evidence_level": null,
+        "evidence_quote": "??????????? ????? ???????",
+        "reason": "drug option table near recommendation",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 11
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "B",
+        "evidence_level": "1",
+        "evidence_quote": "С (уровень достоверности доказательств – 5) ● Рекомендуется добавить второе ЛС или назначить комбинированный препарат пациентам с УГ при неэффективности монотерапии для достижения «целевого» уровня ВГД [97, 98]. Уровень убедительности рекомендаций B (уровень достоверности доказательств – 1) Коммента ... ли 10 мл во флаконах-капельницах; Капли глазные по 0,4 мл в тюбикахкапельницах, 10, 20, 30, 60 или 90 шт.; Капли глазные по 5 мл во флаконах-капельницах (без консервантов) Альфа- и бета-адреноблокатор и симпатомиметики для лечения глаукомы проксофелин Капли глазные по 1,5 мл в тюбикахкапельницах, 5 шт. 65 (S01EX Другие противоглаукомные препараты) Симпатомиметики для л",
+        "reason": "fixed-combination table is governed by the preceding recommendation with B1 evidence",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 11,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 12,
+      "block_id": "block:6a21428063128b2b",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "C",
+        "evidence_level": "4",
+        "evidence_quote": "???????????. ??????? ?????????????? ???????????? ?",
+        "reason": "explicit recommended therapy",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 12
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "C",
+        "evidence_level": "4",
+        "evidence_quote": "альфа-2а** один раз в неделю) [7, 8, 30, 36, 37, 57]. Уровень убедительности рекомендаций С (уровень достоверности доказательств - 4) Комментарии: При непереносимости высоких доз интерфероны назначают 3-6 млн МЕ ежедневно или 3 раза в неделю. При применении препарата возможны отклонения от нормы лабораторных показателей, проявляющиеся лейкопенией, лимфопенией, тромбоцитопенией, анемией, повышением активност",
+        "reason": "explicit recommended therapy",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 12,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 13,
+      "block_id": "block:fcd5eefdeae4532b",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "?? 30 ????? ?? ???",
+        "reason": "false phrase match",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 13
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "т достижение и поддержание состояния эутиреоза, что определяется нормальными значениями ТТГ и Т4 в сыворотке крови [1,3]. Состояние эутиреоза определяется как нормализация показателей действия гормонов щитовидной железы и отсутствие или регресс симптомов и клинических признаков, связанных с гипотиреозом. Одним из факторов, снижающих приверженность пациентов к лечению, служит необходимость принимать табл",
+        "reason": "false phrase match",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 13,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 14,
+      "block_id": "block:885ffd418ec8d767",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "C",
+        "evidence_level": "2",
+        "evidence_quote": "?????????? ????????? ?????? ?????????",
+        "reason": "explicit recommended therapy",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 14
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "C",
+        "evidence_level": "2",
+        "evidence_quote": "очных минеральных вод). Рекомендовано при лечении в условиях стационара пациентам со среднетяжелым и тяжелым течением, а также пациентам с наличием пневмонии с антигипоксической и антиоксидантной целью для купирования синдрома интоксикации назначение Меглюмина натрия сукцината** [99-101]. Уровень убедительности рекомендаций С (уровень достоверности доказательств – 2). Комментарии: вводят внутривенно капельно со скоростью 1-4,5 мл/мин (до 90 капель в минуту). Средняя суточная доза -10 мл/кг.",
+        "reason": "explicit recommended therapy",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 14,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 15,
+      "block_id": "block:d18056cb48d1ca33",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "??????? ?????? ???????????",
+        "reason": "strict false substring match: searched drug name is embedded in another drug name",
+        "reviewer": "codex_manual_v2_user_corrected",
+        "sample_index": 15
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "конкретного больного) за 1 час и/или непосредственно перед ЛТП может снизить степень выраженности реактивной гипертензии [121, 128]. Назначение противовоспалительной терапии (индометацин 0,1/о по 1-2 капли Зраза в день, или непафенак 0,1% по 1-2 кати 2раза в день, или бромфенак 0,09% по 1-2 кати 1 раз в день, или дексаметазон 0,1% по 1-2 кати 3 раза в день 35 ши фторметолон 0.1% по 1 - 2 капли 3 раза в",
+        "reason": "strict false substring match: searched drug name is embedded in another drug name",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 15,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 16,
+      "block_id": "block:c2129f65d198427f",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "??????? ? ?????????",
+        "reason": "false phrase match",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 16
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "ие ВРКТ- и морфологического паттернов (Прил. Д)) [23]; > вероятный ИЛФ (соответствующее сочетание ВРКТ- и морфологического паттернов (см. Прил. Д)) [23]; > комбинация легочного фиброза с эмфиземой. Пример формулировки диагноза: а. Интерстициальное заболевание легких: идиопатический легочный фиброз. Хроническая гипоксемическая дыхательная недостаточность. б. Интерстициальное заболевание легких: идиопатич",
+        "reason": "false phrase match",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 16,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 17,
+      "block_id": "block:7f451e0ebaab2cca",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "method",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "?????????????? ???????",
+        "reason": "treatment step-down table",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 17
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "method",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "ию с использованием ИГКС+формотерол в режиме единого ингалятора с более низкой поддерживающей дозой Средняя доза ИГКС+формотерол поддерживающая терапия и по потребности1 Снизить поддерживающую дозу ИГКС+формотерола1 до низкой и продолжать прием в режиме по потребности Высокая доза ИГКС + второй препарат базисной терапии - Снизить дозу ИГКС на 50% и продолжить прием второго препарата. 3 ступень Низкие дозы ИГКС+ДДБА (поддерживающая терапия) - Снизить дозу ИГКС+ДДБА до одного раза в день - Отмена ДДБА может привести ",
+        "reason": "user-confirmed supportive therapy table recommendation; no local evidence level found in current context window",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 17,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00",
+        "audit_note": "label confirmed by user; evidence levels require manual source check because current 2500-char block has no UUR/UDD candidates"
+      }
+    },
+    {
+      "sample_index": 18,
+      "block_id": "block:3c3047c05014c765",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "?????????",
+        "reason": "etiology/adverse cause list, not recommendation",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 18
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "подобных препаратов (Пеницилламин**), моноклональных антител (Цетуксимаб**, Панитумумаб**), ингибиторов тирозинкиназы рецептора эпидермального фактора роста (EGFR) (Эрлотиниб**, Гефитиниб**), Интерферона альфа**, Фенотерола, Амлодипина**, Периндоприла**, Ривастигмина**, Зидовудина** и других [2,4­ 7,9]. В случае, если гипертрихоз располагается на участках, подверженных инсоляции, необходимо рассмотреть",
+        "reason": "etiology/adverse cause list, not recommendation",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 18,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 19,
+      "block_id": "block:6d67c0e94dd3944f",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "method",
+        "recommendation_strength": "C",
+        "evidence_level": "5",
+        "evidence_quote": "????????????? ????????? ????????????",
+        "reason": "explicit diagnostic recommendation",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 19
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "льпаторно может определяться разлитой верхушечный толчок, ослабленный, смещенный в шестое межреберье. При перкуссии выявляется расширение границ сердца, преимущественно влево. При КСФ среднего и большого размера также может наблюдаться перкуторное расширение границ сердца в основном за счет левых отделов. Рекомендуется у всех пациентов с подозрением на аномалии КА во время физикального обследования в",
+        "reason": "KSF is used here as a coronary fistula/pathology abbreviation in a comment, not as the recommended method itself",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 19,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 20,
+      "block_id": "block:620494f9e7581c1b",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????? 20 ??/?2",
+        "reason": "chemotherapy regimen list",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 20
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "00 мг/м2 в/в длительно в течение 6 часов через 1 час после введения этопозида** 1 раз в день в 1 – 6-й дни Dec-Ida-Ara-C [63, 94] #Децитабин 20 мг/м2 в/в 1 раз в день, 1–3 дни #Идарубицин** 6 мг/м2 в/в струйно 1 раз в день, 4–6 дни #Цитарабин** 25 мг/м2 х 2 р/сут, 4–17 дни, подкожно или #Децитабин 20 мг/м2 в/в 1 раз в день, 1–3 дни #Идарубицин** 3 мг/м2 в/в струйно 1 раз в день через 24 часа после окончания введения децитабина, 5–7 дни #Цитарабин** 30 мг/м2 х 2 р/сут, 7–14 дни, подкожно Aza-Ida-Ara-C [66] #Азацитид",
+        "reason": "user-confirmed Detsit/decitabine equivalence in chemotherapy regimen; no local evidence level found",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 20,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 21,
+      "block_id": "block:a865a71bc8881f62",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "B",
+        "evidence_level": "2",
+        "evidence_quote": "????? ???? ???????? ??????????? ??? ?????????",
+        "reason": "alternative therapy in recommendation comment",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 21
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "B",
+        "evidence_level": "2",
+        "evidence_quote": ") 54 ● Рекомендуется дополнительно назначение в схемы режима МЛУ туберкулеза деламанида** для повышения эффективности лечения [99, 100, 101, 103, 105] Уровень убедительности рекомендаций В (уровень достоверности доказательств 2) Комментарии: Деламанид** назначается на 6 месяцев лечения, но по решению ВК длительность применения препарата может быть увеличена при условии информированного согласия пациента. При невозможности составления схемы терапии из вышеперечисленных препаратов в схему терапии могут быть включены протионамид** или этионамид**. Применение капреомицина**, канамицина** или #амикацина**возможно при сохранении к ним лекарственной чувствительности возбудителя. В схему терапии могут быть включены аминосалициловая кислота**, тиоуреидоиминометилпиридиния перхлорат**. Дозы лекарственных препаратов вне показаний указаны в приложении",
+        "reason": "alternative therapy in recommendation comment",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 21,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 22,
+      "block_id": "block:736c3f56ba843033",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????? ???? ???????????? ?????? ? ???",
+        "reason": "patient advice",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 22
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "Кофе и черный чай стимулируют деятельность почек и выведение жидкости из организма, снижая запас жидкости в организме. При болезни Паркинсона лучше пить растительные отвары и чаи (мята, лимон, ромашка и пр.). Крепкие алкогольные напитки нежелательны, так как алкоголь действует губительно на нервную систему и может взаимодействовать с некоторыми препаратами (в том числе антидепрессантами). Витамины можно принимать зим",
+        "reason": "patient advice",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 22,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 23,
+      "block_id": "block:b0fb79202404502b",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "?????? ???? ????? ???????????",
+        "reason": "false phrase match",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 23
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "ми деградации клеток лейкемического клона. Вместе с тем, отсутствие клеток Гоше в препаратах костного мозга может отражать технические особенности приготовления мазка: клетки Гоше легко разрушаются и/или присутствуют на периферии мазка – в зонах, обычно не подвергающихся просмотру. У взрослых пациентов с подозрением на БГ цитологическое исследование мазка костного мозга (миелограмма) и/или цитологическое и",
+        "reason": "false phrase match",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 23,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 24,
+      "block_id": "block:b59d0f103ad977c6",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "method",
+        "recommendation_strength": "C",
+        "evidence_level": "4",
+        "evidence_quote": "????????????? ??????????? ????????????? ??????????",
+        "reason": "explicit referral recommendation",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 24
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "прошлого или настоящего состояния, которое может повлиять на безопасность реципиента во время операции или в долгосрочной перспективе, а также скрытой или текущей инфекции у реципиента, которая может усугубиться после трансплантации Рекомендуется направление потенциальных кандидатов на сочетанную пересадку поджелудочной железы и почки для их обследования минимум за 6-12 месяцев до ожидаемого начала диализа и с целью возможной додиализной сочетанной трансплантации [9]. Уровень убедительности рекомендаций С (уровень ",
+        "reason": "Potencial is a generic substring inside potential candidates, not a clinical target term",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 24,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 25,
+      "block_id": "block:5996b9e58024a2a1",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "???????? ?????? ??????",
+        "reason": "false product-name match in patient info",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 25
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": ". Алгоритм ведения пациента с Брадиаритмиями Приложение В. Информация для пациентов ЧТО ТАКОЕ БРАДИКАРДИЯ? Брадикардия — это состояние, при котором сердце бьется слишком медленно. Здоровое сердце бьется с частотой 60–100 ударов в минуту, перекачивая приблизительно 284 л крови каждый час. При брадикардии сердце бьется с частотой менее 60 ударов в минуту. При такой скорости сердце не может перекачивать достаточное",
+        "reason": "false product-name match in patient info",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 25,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 26,
+      "block_id": "block:ba7dfc5ef17adffd",
+      "old_gold": {
+        "label": "literature_mention",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "literature review",
+        "reason": "bibliography/reference list",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 26
+      },
+      "new_gold": {
+        "label": "literature_mention",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "ment of intractable craniofacial pain // J. Neurosurg. 2015. Vol. 123, № 1. P. 283– 288. 194 343. William A. et al. Trigeminal and sphenopalatine ganglion stimulation for intractable craniofacial pain—case series and literature review // Acta Neurochir. (Wien). 2016. Vol. 158, № 3. P. 513–520. 344. Slavin K. V. et al. Trigeminal and occipital peripheral nerve stimulation for craniofacial pain: a single-i",
+        "reason": "bibliography/reference list",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 26,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 27,
+      "block_id": "block:449c2b893469fa4a",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "??? ??? ???????? ? ???????? ???????",
+        "reason": "clinical description, not recommendation",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 27
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "олости ЛЖ и деформации створок клапана. В результате – аускультативно начинает выслушиваться систолический шум недостаточности МК с максимумом на верхушке сердца. При аускультации КСФ средних и больших размеров может выслушиваться продолжительный шум, напоминающий таковой при открытом артериальном протоке, но нетипичной локализации (ниже у края грудины), с усилением шума в средней/поздней фазе диасто",
+        "reason": "clinical description, not recommendation",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 27,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 28,
+      "block_id": "block:63791f156c875bfa",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "?????????????? ?????????? ????????",
+        "reason": "generic word false positive",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 28
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "ятствующей разрешению конфликтов, связанных с неудачным опытом ранних отношений, интеграции нового опыта, формированию устойчивой самооценки и определяющей снижение адаптационного потенциала личности Предикторы волнообразного течения затяжных форм  личностные особенности индивида, определяющие его уязвимость к стрессовым воздействиям, затрагивающим наиболее значимые отношения личности и имеющим сходный (с",
+        "reason": "generic word false positive",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 28,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 29,
+      "block_id": "block:de7295ee547c765d",
+      "old_gold": {
+        "label": "literature_mention",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "ClinExpReprod Med",
+        "reason": "bibliography/reference list",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 29
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "and other parameters in idiopathic oligoasthenoteratozoospermia. [Review]. BioMed Research International, 2014. 426951. 90. Jung JH, Seo JT. Empirical medical therapy in idiopathic male infertility:Promise or panacea? ClinExpReprod Med. 2014 Sep;41(3):108-14. 91. Chehab М, Madala М, Trussell J.C. On-label and off-label drugs used in the treatment of male infertility. Fertility and Sterility, 2015, Vol. 103, No. 3: 595-604. 92. Божедомов В.А., Камалов А.А., БожедомоваГ. Е. и соавт",
+        "reason": "Linex is a false substring inside ClinExpReprod journal title",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 29,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 30,
+      "block_id": "block:4677af438e3b082a",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "??????????? ???????????",
+        "reason": "generic risk description, not recommendation",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 30
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "месте с ПАВ других групп – чаще всего с опиоидами, но известны случаи длительного злоупотребления этими средствами при невозможности достать основной наркотик [18-20]. Наркогенным потенциалом обладает также ряд ЛП с холинолитическим эффектом: трициклические антидепрессанты, Дифенгидрамин**, Прометазин, Хлоропирамин**, Клемастин [17]. В последние годы наблюдается рост распространённости новых дизайнерских П",
+        "reason": "generic risk description, not recommendation",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 30,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 31,
+      "block_id": "block:3a04fc48c8638894",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????????? ???????",
+        "reason": "algorithm label/generic phrase",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 31
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "=89с181е79-6176-43568184-1с<122Ь600с7а&1=. Ассеззеё оп 19.03.2021. 49 Приложение Б. Алгоритмы действий врача Нет Нет V мпо оип БАЛ Не ИЛФ ИЛФ ХБЛ КТ паттерн Альтернативный диагноз Потенциальная причина Дальнейшее обследование, включая ВРКТ Клиническое подозрение на ИЛФ МПО Специфические патологические изменения Вероятная ОИП Неопределенная ОИП Альтернативный диагноз 50 Приложение В. Информация для пациента",
+        "reason": "algorithm label/generic phrase",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 31,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 32,
+      "block_id": "block:b8f024382eaaad97",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "C",
+        "evidence_level": "5",
+        "evidence_quote": "????????? A11AA ????????????",
+        "reason": "explicit recommended therapy",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 32
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "C",
+        "evidence_level": "5",
+        "evidence_quote": "ервантов) присутствуют бензойная кислота (Е210) и её производные (Е209, Е211-Е219) [42, 43]. Рекомендовано пациентам с ИвА при наличии витаминодефицитных состояний применять A11AA Поливитамины в комбинации с минеральными веществами в возрастных дозировках с лечебной целью [44]. Уровень убедительности рекомендаций С (уровень достоверности доказательств – 5) Комментарии: Во избежание провокации эпилептических п",
+        "reason": "explicit recommended therapy",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 32,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 33,
+      "block_id": "block:68d5e48032a046aa",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "method",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "?? ??????? ????????????",
+        "reason": "administrative appendix/form text, not recommendation",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 33
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "method",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "лее — Вкладыш-2) (см. Приложение АЗ.5) заполняется врачом-остеопатом медицинской организации (иной организации), оказывающей медицинскую помощь в амбулаторных условиях по профилю «остеопатия». Вкладыш-2 заполняется на каждого повторно обратившегося пациента. Вкладыш-2 заполняется при каждом повторном посещении пациента. Записи производятся на русском языке, аккуратно, все необходимые во Вкладыше-2 исправлен",
+        "reason": "administrative appendix/form text, not recommendation",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 33,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 34,
+      "block_id": "block:9f2879462db79236",
+      "old_gold": {
+        "label": "literature_mention",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????????? ??????????",
+        "reason": "bibliography/reference list",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 34
+      },
+      "new_gold": {
+        "label": "literature_mention",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "Циклоферона в терапии и профилактике гриппа и ОРЗ, РМЖ: Болезни дыхательных путей. 2011. № 23. С. 1420–1425. 244. Мазина Н.К., Шешунов И.В., Мазин П.В. Адъювантная энергопротекция реамберином в практике интенсивной терапии и реанимации: эффективность по данным метаанализа (систематический обзор). Анестезиология и реаниматология. 2016; 61(4), С. 314–319. 245. Картополова Е.В. Оптимизация комплексной терапии",
+        "reason": "bibliography/reference list",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 34,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 35,
+      "block_id": "block:f8702c43e6b0223d",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????????? ???????????? ???????",
+        "reason": "explicit recommended therapy",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 35
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "C",
+        "evidence_level": "4",
+        "evidence_quote": "Рекомендуется гопантеновая кислота с целью коррекции высших психических функций у детей с умственной отсталостью.",
+        "reason": "explicit recommended gopantenic acid therapy with C4 evidence in the same paragraph",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 35,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 36,
+      "block_id": "block:b0affc3998b09284",
+      "old_gold": {
+        "label": "contraindication",
+        "target_kind": "method",
+        "recommendation_strength": "C",
+        "evidence_level": "4",
+        "evidence_quote": "?????????????? ??????? ?? ?????????????",
+        "reason": "explicit not recommended therapy",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 36
+      },
+      "new_gold": {
+        "label": "contraindication",
+        "target_kind": "method",
+        "recommendation_strength": "C",
+        "evidence_level": "4",
+        "evidence_quote": "доказано преимущество поддерживающей терапии #бортезомибом** или #леналидомидом** у больных с впервые диагностированным и рецидивирующим AL-A [125]. Однако при сочетании AL-A и ММ поддерживающая терапия после ауто-ТГСК проводится в соответствии с клиническими рекомендациями по лечению ММ [82]. Лечение IgM первичного амилоидоза • Больным IgM AL амилоидозом с лимфоидным клоном рекомендуется терапия #ритуксимабом** в соче",
+        "reason": "explicit not recommended therapy",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 36,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 37,
+      "block_id": "block:d6469429d7536345",
+      "old_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????????? ????????? ????????????",
+        "reason": "explicit recommended therapy",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 37
+      },
+      "new_gold": {
+        "label": "recommendation",
+        "target_kind": "drug",
+        "recommendation_strength": "A",
+        "evidence_level": "2",
+        "evidence_quote": "я назначение БАБ, БКК, иАПФ и ингибитров ГМГ-коА-редуктазы, изменение образа жизни, коррекция веса, программы реабилитации, отказ от курения [120, 121]. EOK I A (УУР A, УДД 2) 64 Комментарий. Рекомендуется применять БАБ с вазодилатирующими свойствами (небиволол). При недостаточной эффективности БАБ и БКК у больных микрососудистой стенокардией для профилактики приступов рекомендуется назначать никорандил, ранолазин, ивабрадин, триметазидин [287]. Вазоспастическая стенокардия (Вариантная стенокардия, стенокардия Принцметала) • П",
+        "reason": "trimetazidine appears in a comment attached to the preceding A2 recommendation for microvascular angina therapy",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 37,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 38,
+      "block_id": "block:2eed74140080c5b1",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????????? ?????????? ????????????",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 38
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "риск кровотечений не должен являться единственным ограничением к назначению антикоагулянтов. В первую очередь необходимо провести обследование пациента, направленное на выявление потенциальных источников кровотечений, и скорректировать модифицируемые факторы риска, а при наличии немодифицируемых факторов, выбрать антикоагулянт, наиболее подходящий пациенту в соответствии с клиническими характеристиками (с",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 38,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 39,
+      "block_id": "block:f2ec3d3ded5901d2",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "????????????? ??????",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 39
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "итания включают: выбор пациента и его родителей, характер осложнений, вкусовые предпочтения пациента, отсутствие осложнений при использовании кортикостероидов системного действия, потенциальная польза, в виде улучшения трофического статуса и темпа роста ребѐнка  Полное энтеральное питание (ПЭП) в течение 6-8 недель рекомендуется в качестве терапии первой линии для индукции ремиссии у детей с вновь установ",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 39,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    },
+    {
+      "sample_index": 40,
+      "block_id": "block:f04231f3ac3e66bf",
+      "old_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "?????????????? ????????????",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v1",
+        "sample_index": 40
+      },
+      "new_gold": {
+        "label": "error",
+        "target_kind": "other",
+        "recommendation_strength": null,
+        "evidence_level": null,
+        "evidence_quote": "ирования, с достигнутым эффектом или стабилизацией Приложение В. Информация для пациента Пациента информируют о клинической картине РМП, знакомят с различными методами лечения, их потенциальными результатами и осложнениями. Следует информировать пациента о симптоматике, различных осложнениях РМП. Особенно важно предупреждать пациентов с РМП с метастатическим поражением позвонков о возможной компрессии спин",
+        "reason": "generic adjective false positive",
+        "reviewer": "codex_manual_v2",
+        "sample_index": 40,
+        "reviewed_at": "2026-04-30T16:13:55.713075+00:00"
+      }
+    }
+  ]
+}

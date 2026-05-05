@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments and secrets
+.env
+*.env
+!*.env.example
+config/openrouter.env
+config/*.local
+
+# Editor and OS files
+.vscode/
+.idea/
+*.suo
+*.user
+*.tmp
+*~
+Thumbs.db
+Desktop.ini
+
+# Local automation and browser state
+.playwright-mcp/
+bot-dashboard-smoke.png
+
+# Logs
+*.log
+reports/**/*.log
+
+# Local legacy archive
+old/
+Old/
+
+# Generated run folders
+runs/
+reports/default/
+reports/smoke/
+reports/g4f/
+
+# Aho reports: keep scripts, dashboard, manual host-word filters, and compact useful outputs.
+reports/aho/__pycache__/
+reports/aho/partials/
+reports/aho/host_words_by_search_word.json
+reports/aho/host_words_compact.before_*.json
+!reports/aho/aho_filter_dashboard.py
+!reports/aho/apply_host_word_filters.py
+!reports/aho/filter_detailed_host_words.py
+!reports/aho/group_filtered_locations.py
+!reports/aho/dashboard/
+!reports/aho/dashboard/index.html
+!reports/aho/host_word_filters.json
+!reports/aho/host_word_filters_parts/
+!reports/aho/host_word_filters_parts/*.json
+!reports/aho/host_words_compact.json
+!reports/aho/host_words_filtered_compact.json
+!reports/aho/host_words_by_search_word_filtred.json
+!reports/aho/host_words_by_location_filtred.json
+
+# LLM reports: keep manual labels and useful OpenRouter outputs, ignore huge reproducible case build.
+reports/llm/reports/
+reports/llm/llm_review_cases.json
+!reports/llm/README.md
+!reports/llm/build_llm_review_cases.py
+!reports/llm/llm_audit_dashboard.py
+!reports/llm/run_openrouter_gold40.py
+!reports/llm/run_openrouter_all.py
+!reports/llm/excluded_preparations.json
+!reports/llm/llm_gold_40*.json
+!reports/llm/openrouter_gold40*.json
+!reports/llm/openrouter_all_results*.json
+
+# Input data policy: keep source dictionaries needed for reproducibility unless a file exceeds GitHub limits.
+data/input/*.pdf
+data/input/*.html
+data/input/*_files/
+!data/input/README.md
+!data/input/.gitkeep
+!data/input/*.json
+
+# Large GitHub-blocking JSON inputs.
+data/input/clinical_recommendations.json
+data/input/drugs.json

@@ -1,0 +1,4740 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-30T15:57:47.441458+00:00",
+  "review_cases": "C:\\Users\\Иван Литвак\\source\\repos\\Bot_for_anal_rec\\Bot_for_anal_rec\\reports\\aho\\llm_review_cases.json",
+  "gold": "C:\\Users\\Иван Литвак\\source\\repos\\Bot_for_anal_rec\\Bot_for_anal_rec\\reports\\aho\\llm_gold_40.json",
+  "env_file": "C:\\Users\\Иван Литвак\\source\\repos\\Bot_for_anal_rec\\Bot_for_anal_rec\\config\\openrouter.env",
+  "loaded_env_vars": 3,
+  "model": "openai/gpt-5.4",
+  "prompt_version": "llm-review-v2",
+  "completed": 40,
+  "predictions": {
+    "block:7e97fee0a6d3912a": {
+      "label": "error",
+      "target_kind": "drug",
+      "evidence_quote": "например, 34 нусинерсен** и рисдиплам**",
+      "reason": "Найденный термин «Диплам» является подстрокой внутри другого названия препарата «рисдиплам» (inside_word=true). По строгой фильтрации такие вложенные совпадения классифицируются как ошибка, даже если рядом есть рекомендация/противопоказание.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:55:27.940182+00:00",
+        "finished_at": "2026-04-30T15:55:31.802593+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8122
+        },
+        "response": {
+          "id": "gen-1777564527-W8J5pJ3co9cgFm6TnRDF",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2142,
+            "completion_tokens": 119,
+            "total_tokens": 2261,
+            "cost": 0.00714,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00714,
+              "upstream_inference_prompt_cost": 0.005355,
+              "upstream_inference_completions_cost": 0.001785
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 30,
+          "include_byok_in_limit": false,
+          "usage": 0,
+          "usage_daily": 0,
+          "usage_weekly": 0,
+          "usage_monthly": 0,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 30,
+          "include_byok_in_limit": false,
+          "usage": 0,
+          "usage_daily": 0,
+          "usage_weekly": 0,
+          "usage_monthly": 0,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0,
+          "usage_daily_delta": 0,
+          "usage_weekly_delta": 0,
+          "usage_monthly_delta": 0,
+          "limit_remaining_delta": 0
+        }
+      }
+    },
+    "block:d156d6d2f0a57690": {
+      "label": "error",
+      "target_kind": "marker",
+      "evidence_quote": "Анаболический эффект ГР на уровне тканей реализуется через инсулиноподобный фактор роста 1 (ИФР-1).",
+      "reason": "Упоминание ИФР-1 дано в патофизиологическом/описательном контексте как маркер/фактор роста, а не как рекомендуемое или противопоказанное действие; по правилам фоновые определения и патофизиология относятся к error.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.98,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:55:32.032741+00:00",
+        "finished_at": "2026-04-30T15:55:36.635891+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8124
+        },
+        "response": {
+          "id": "gen-1777564532-Pp25c2WCNVGlzkcURYTZ",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2218,
+            "completion_tokens": 131,
+            "total_tokens": 2349,
+            "cost": 0.00751,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00751,
+              "upstream_inference_prompt_cost": 0.005545,
+              "upstream_inference_completions_cost": 0.001965
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 30,
+          "include_byok_in_limit": false,
+          "usage": 0,
+          "usage_daily": 0,
+          "usage_weekly": 0,
+          "usage_monthly": 0,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 30,
+          "include_byok_in_limit": false,
+          "usage": 0,
+          "usage_daily": 0,
+          "usage_weekly": 0,
+          "usage_monthly": 0,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0,
+          "usage_daily_delta": 0,
+          "usage_weekly_delta": 0,
+          "usage_monthly_delta": 0,
+          "limit_remaining_delta": 0
+        }
+      }
+    },
+    "block:b270f87c2facb0b2": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "с целью своевременнной диагностики их обструкции или потенциальной обструкции",
+      "reason": "Найдено внутри обычного слова «потенциальной» (inside_word=true), это ложное срабатывание по подстроке, не самостоятельный термин и не объект рекомендации.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:55:36.866933+00:00",
+        "finished_at": "2026-04-30T15:55:42.100325+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7939
+        },
+        "response": {
+          "id": "gen-1777564536-hTX6OkEIE2XoffKyEUGk",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2022,
+            "completion_tokens": 100,
+            "total_tokens": 2122,
+            "cost": 0.006555,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.006555,
+              "upstream_inference_prompt_cost": 0.005055,
+              "upstream_inference_completions_cost": 0.0015
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 30,
+          "include_byok_in_limit": false,
+          "usage": 0,
+          "usage_daily": 0,
+          "usage_weekly": 0,
+          "usage_monthly": 0,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 30,
+          "include_byok_in_limit": false,
+          "usage": 0,
+          "usage_daily": 0,
+          "usage_weekly": 0,
+          "usage_monthly": 0,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0,
+          "usage_daily_delta": 0,
+          "usage_weekly_delta": 0,
+          "usage_monthly_delta": 0,
+          "limit_remaining_delta": 0
+        }
+      }
+    },
+    "block:010340027c564110": {
+      "label": "error",
+      "target_kind": "drug",
+      "evidence_quote": "прием поливитаминных комплексов минимум за 1 месяц до планируемой беременности",
+      "reason": "Найденный термин «Поливит» является ложным срабатыванием внутри большего слова «поливитаминных» (inside_word=true), а не самостоятельным названием препарата.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:55:42.535404+00:00",
+        "finished_at": "2026-04-30T15:55:45.408374+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 5703
+        },
+        "response": {
+          "id": "gen-1777564542-KKPFVgFNvWtrJ6iQvItj",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 1375,
+            "completion_tokens": 101,
+            "total_tokens": 1476,
+            "cost": 0.0049525,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0049525,
+              "upstream_inference_prompt_cost": 0.0034375,
+              "upstream_inference_completions_cost": 0.001515
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 30,
+          "include_byok_in_limit": false,
+          "usage": 0,
+          "usage_daily": 0,
+          "usage_weekly": 0,
+          "usage_monthly": 0,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 30,
+          "include_byok_in_limit": false,
+          "usage": 0,
+          "usage_daily": 0,
+          "usage_weekly": 0,
+          "usage_monthly": 0,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0,
+          "usage_daily_delta": 0,
+          "usage_weekly_delta": 0,
+          "usage_monthly_delta": 0,
+          "limit_remaining_delta": 0
+        }
+      }
+    },
+    "block:cf732de3c39ecb98": {
+      "label": "recommendation",
+      "target_kind": "drug",
+      "evidence_quote": "Пациентам с 3-ГМКоАЛД с низким уровнем свободного карнитина назначают лекарственные препараты, содержащие L-карнитин (левокарнитин), в дозировке 75-100 мг/кг/сутки",
+      "reason": "Выделенный термин является самим препаратом, который прямо назначают пациентам в лечебной рекомендации.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.98,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:55:45.597031+00:00",
+        "finished_at": "2026-04-30T15:55:50.024945+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8787
+        },
+        "response": {
+          "id": "gen-1777564545-McUDEeADcQMa6KHrm3TZ",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2514,
+            "completion_tokens": 121,
+            "total_tokens": 2635,
+            "cost": 0.0081,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0081,
+              "upstream_inference_prompt_cost": 0.006285,
+              "upstream_inference_completions_cost": 0.001815
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 30,
+          "include_byok_in_limit": false,
+          "usage": 0,
+          "usage_daily": 0,
+          "usage_weekly": 0,
+          "usage_monthly": 0,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.98535,
+          "include_byok_in_limit": false,
+          "usage": 0.01465,
+          "usage_daily": 0.01465,
+          "usage_weekly": 0.01465,
+          "usage_monthly": 0.01465,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.01465,
+          "usage_daily_delta": 0.01465,
+          "usage_weekly_delta": 0.01465,
+          "usage_monthly_delta": 0.01465,
+          "limit_remaining_delta": -0.014649999999999608
+        }
+      }
+    },
+    "block:d5b1311a25b3a80c": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "других потенциальных рисков для здоровья",
+      "reason": "Найдено вхождение внутри обычного слова «потенциальных» (inside_word=true), а не самостоятельный термин/метод; по строгой фильтрации это ложное срабатывание.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:55:50.285396+00:00",
+        "finished_at": "2026-04-30T15:55:53.745130+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7946
+        },
+        "response": {
+          "id": "gen-1777564550-n2nYZ6tAKdClAacl3wNb",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2048,
+            "completion_tokens": 96,
+            "total_tokens": 2144,
+            "cost": 0.00656,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00656,
+              "upstream_inference_prompt_cost": 0.00512,
+              "upstream_inference_completions_cost": 0.00144
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.98535,
+          "include_byok_in_limit": false,
+          "usage": 0.01465,
+          "usage_daily": 0.01465,
+          "usage_weekly": 0.01465,
+          "usage_monthly": 0.01465,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.98535,
+          "include_byok_in_limit": false,
+          "usage": 0.01465,
+          "usage_daily": 0.01465,
+          "usage_weekly": 0.01465,
+          "usage_monthly": 0.01465,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:bd063171f834f92c": {
+      "label": "contraindication",
+      "target_kind": "drug",
+      "evidence_quote": "не рекомендуются для купирования приступов М любые препараты, содержащие метамизол натрия",
+      "reason": "Выделенный термин — сам препарат метамизол; в локальном контексте прямо сказано, что препараты с ним не рекомендуются.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:55:54.078609+00:00",
+        "finished_at": "2026-04-30T15:55:57.139987+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8332
+        },
+        "response": {
+          "id": "gen-1777564553-Iu04PYuMJ8SMzxJXBLaL",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2384,
+            "completion_tokens": 94,
+            "total_tokens": 2478,
+            "cost": 0.00737,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00737,
+              "upstream_inference_prompt_cost": 0.00596,
+              "upstream_inference_completions_cost": 0.00141
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.98535,
+          "include_byok_in_limit": false,
+          "usage": 0.01465,
+          "usage_daily": 0.01465,
+          "usage_weekly": 0.01465,
+          "usage_monthly": 0.01465,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.98535,
+          "include_byok_in_limit": false,
+          "usage": 0.01465,
+          "usage_daily": 0.01465,
+          "usage_weekly": 0.01465,
+          "usage_monthly": 0.01465,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:758d89cc5ad6b007": {
+      "label": "recommendation",
+      "target_kind": "drug",
+      "evidence_quote": "-Даклатасвир** + Нарлапревир** + Ритонавир** [109] Уровень убедительности рекомендаций С (уровень достоверности доказательств – 4)",
+      "reason": "Термин входит в явно рекомендуемую альтернативную схему лечения в списке схем ПВТ.",
+      "recommendation_strength": "C",
+      "evidence_level": "4",
+      "confidence": 0.97,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:55:57.346881+00:00",
+        "finished_at": "2026-04-30T15:56:02.478124+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 10834
+        },
+        "response": {
+          "id": "gen-1777564557-ZrIXQik7DUzxvnmtQvp3",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 3597,
+            "completion_tokens": 110,
+            "total_tokens": 3707,
+            "cost": 0.0106425,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0106425,
+              "upstream_inference_prompt_cost": 0.0089925,
+              "upstream_inference_completions_cost": 0.00165
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.98535,
+          "include_byok_in_limit": false,
+          "usage": 0.01465,
+          "usage_daily": 0.01465,
+          "usage_weekly": 0.01465,
+          "usage_monthly": 0.01465,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.98535,
+          "include_byok_in_limit": false,
+          "usage": 0.01465,
+          "usage_daily": 0.01465,
+          "usage_weekly": 0.01465,
+          "usage_monthly": 0.01465,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:24f962002b797b11": {
+      "label": "error",
+      "target_kind": "drug",
+      "evidence_quote": "ЭФЛ - эссенциальные фосфолипиды (фосфолипиды)",
+      "reason": "Упоминание находится в списке сокращений/глоссарии, это расшифровка термина, а не рекомендация или противопоказание.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:02.702222+00:00",
+        "finished_at": "2026-04-30T15:56:05.414219+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8641
+        },
+        "response": {
+          "id": "gen-1777564562-EpsU1gnlrrUbulPsEeDS",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 3214,
+            "completion_tokens": 99,
+            "total_tokens": 3313,
+            "cost": 0.00952,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00952,
+              "upstream_inference_prompt_cost": 0.008035,
+              "upstream_inference_completions_cost": 0.001485
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.98535,
+          "include_byok_in_limit": false,
+          "usage": 0.01465,
+          "usage_daily": 0.01465,
+          "usage_weekly": 0.01465,
+          "usage_monthly": 0.01465,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.978795,
+          "include_byok_in_limit": false,
+          "usage": 0.021205,
+          "usage_daily": 0.021205,
+          "usage_weekly": 0.021205,
+          "usage_monthly": 0.021205,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.006555000000000002,
+          "usage_daily_delta": 0.006555000000000002,
+          "usage_weekly_delta": 0.006555000000000002,
+          "usage_monthly_delta": 0.006555000000000002,
+          "limit_remaining_delta": -0.006554999999998756
+        }
+      }
+    },
+    "block:5c2d42c63da3797a": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "с учетом потенциальных пользы и риска для пациента",
+      "reason": "Найдено внутри обычного слова «потенциальных» (inside_word=true), это ложное срабатывание по подстроке, не самостоятельный термин и не объект рекомендации.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:05.592772+00:00",
+        "finished_at": "2026-04-30T15:56:08.300319+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7933
+        },
+        "response": {
+          "id": "gen-1777564565-U733pwo00WgRvtSNY5Ij",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2124,
+            "completion_tokens": 92,
+            "total_tokens": 2216,
+            "cost": 0.00669,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00669,
+              "upstream_inference_prompt_cost": 0.00531,
+              "upstream_inference_completions_cost": 0.00138
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.978795,
+          "include_byok_in_limit": false,
+          "usage": 0.021205,
+          "usage_daily": 0.021205,
+          "usage_weekly": 0.021205,
+          "usage_monthly": 0.021205,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.978795,
+          "include_byok_in_limit": false,
+          "usage": 0.021205,
+          "usage_daily": 0.021205,
+          "usage_weekly": 0.021205,
+          "usage_monthly": 0.021205,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:d250eec39a7f3951": {
+      "label": "recommendation",
+      "target_kind": "drug",
+      "evidence_quote": "Альфа- и бета-адреноблокатор и симпатомиметики для лечения глаукомы проксофелин",
+      "reason": "Выделен сам препарат в таблице фиксированных комбинаций, приведенной после рекомендации применять комбинированные препараты; это actionable-упоминание препарата. Вложенный термин «Окс» внутри слова «проксофелин» был бы ошибкой, но сам highlighted host_word — «проксофелин».",
+      "recommendation_strength": "B",
+      "evidence_level": "1",
+      "confidence": 0.94,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:08.492055+00:00",
+        "finished_at": "2026-04-30T15:56:12.178848+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8379
+        },
+        "response": {
+          "id": "gen-1777564568-m5wROpAgC2vKUfta2r9r",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2440,
+            "completion_tokens": 142,
+            "total_tokens": 2582,
+            "cost": 0.00823,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00823,
+              "upstream_inference_prompt_cost": 0.0061,
+              "upstream_inference_completions_cost": 0.00213
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.978795,
+          "include_byok_in_limit": false,
+          "usage": 0.021205,
+          "usage_daily": 0.021205,
+          "usage_weekly": 0.021205,
+          "usage_monthly": 0.021205,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.978795,
+          "include_byok_in_limit": false,
+          "usage": 0.021205,
+          "usage_daily": 0.021205,
+          "usage_weekly": 0.021205,
+          "usage_monthly": 0.021205,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:6a21428063128b2b": {
+      "label": "recommendation",
+      "target_kind": "drug",
+      "evidence_quote": "Рекомендуются для терапии первой линии пациентов с синдромом Сезари интерфероны",
+      "reason": "Выделенный термин сам является препаратом/группой препаратов, прямо рекомендованной в данном предложении для терапии первой линии.",
+      "recommendation_strength": "C",
+      "evidence_level": "4",
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:12.335557+00:00",
+        "finished_at": "2026-04-30T15:56:15.186299+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8564
+        },
+        "response": {
+          "id": "gen-1777564572-l1WcBENuR5r8HMIWvGGe",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2201,
+            "completion_tokens": 88,
+            "total_tokens": 2289,
+            "cost": 0.0068225,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0068225,
+              "upstream_inference_prompt_cost": 0.0055025,
+              "upstream_inference_completions_cost": 0.00132
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.978795,
+          "include_byok_in_limit": false,
+          "usage": 0.021205,
+          "usage_daily": 0.021205,
+          "usage_weekly": 0.021205,
+          "usage_monthly": 0.021205,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.978795,
+          "include_byok_in_limit": false,
+          "usage": 0.021205,
+          "usage_daily": 0.021205,
+          "usage_weekly": 0.021205,
+          "usage_monthly": 0.021205,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:fcd5eefdeae4532b": {
+      "label": "error",
+      "target_kind": "drug",
+      "evidence_quote": "Комментарии: Левотироксин натрия** является препаратом выбора",
+      "reason": "Выделенный термин «лей де» не является самостоятельным осмысленным упоминанием препарата или метода в данном контексте; это ложное срабатывание/фрагмент текста, а не actionable mention.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:15.352475+00:00",
+        "finished_at": "2026-04-30T15:56:19.598544+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8561
+        },
+        "response": {
+          "id": "gen-1777564575-kysU7dzUIcOWiJ8IOAlj",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2319,
+            "completion_tokens": 101,
+            "total_tokens": 2420,
+            "cost": 0.0073125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0073125,
+              "upstream_inference_prompt_cost": 0.0057975,
+              "upstream_inference_completions_cost": 0.001515
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.978795,
+          "include_byok_in_limit": false,
+          "usage": 0.021205,
+          "usage_daily": 0.021205,
+          "usage_weekly": 0.021205,
+          "usage_monthly": 0.021205,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.98535,
+          "include_byok_in_limit": false,
+          "usage": 0.01465,
+          "usage_daily": 0.01465,
+          "usage_weekly": 0.01465,
+          "usage_monthly": 0.01465,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": -0.006555000000000002,
+          "usage_daily_delta": -0.006555000000000002,
+          "usage_weekly_delta": -0.006555000000000002,
+          "usage_monthly_delta": -0.006555000000000002,
+          "limit_remaining_delta": 0.006554999999998756
+        }
+      }
+    },
+    "block:885ffd418ec8d767": {
+      "label": "recommendation",
+      "target_kind": "drug",
+      "evidence_quote": "Рекомендовано при лечении в условиях стационара пациентам со среднетяжелым и тяжелым течением, а также пациентам с наличием пневмонии с антигипоксической и антиоксидантной целью для купирования синдрома интоксикации назначение Меглюмина натрия сукцината**",
+      "reason": "Подсвеченный термин является самим препаратом, который прямо рекомендован к назначению в данном абзаце.",
+      "recommendation_strength": "C",
+      "evidence_level": "2",
+      "confidence": 0.98,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:19.986864+00:00",
+        "finished_at": "2026-04-30T15:56:23.585868+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 9472
+        },
+        "response": {
+          "id": "gen-1777564579-oHcsZer6fA1tZWTAlrjx",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2856,
+            "completion_tokens": 139,
+            "total_tokens": 2995,
+            "cost": 0.009225,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.009225,
+              "upstream_inference_prompt_cost": 0.00714,
+              "upstream_inference_completions_cost": 0.002085
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.978795,
+          "include_byok_in_limit": false,
+          "usage": 0.021205,
+          "usage_daily": 0.021205,
+          "usage_weekly": 0.021205,
+          "usage_monthly": 0.021205,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.93165,
+          "include_byok_in_limit": false,
+          "usage": 0.06835,
+          "usage_daily": 0.06835,
+          "usage_weekly": 0.06835,
+          "usage_monthly": 0.06835,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.04714499999999999,
+          "usage_daily_delta": 0.04714499999999999,
+          "usage_weekly_delta": 0.04714499999999999,
+          "usage_monthly_delta": 0.04714499999999999,
+          "limit_remaining_delta": -0.04714500000000044
+        }
+      }
+    },
+    "block:d18056cb48d1ca33": {
+      "label": "error",
+      "target_kind": "drug",
+      "evidence_quote": "Назначение противовоспалительной терапии (индометацин 0,1% по 1-2 капли 3 раза в день",
+      "reason": "Найденный термин «Метацин» является ложным вхождением внутри другого слова/препарата «индометацин» (inside_word=true). По строгой фильтрации такие подстрочные совпадения размечаются как error, даже если рядом есть рекомендательное назначение.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:23.773678+00:00",
+        "finished_at": "2026-04-30T15:56:28.370742+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8514
+        },
+        "response": {
+          "id": "gen-1777564583-OeMdUnqJOuvWR4SxJtiO",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2483,
+            "completion_tokens": 137,
+            "total_tokens": 2620,
+            "cost": 0.0082625,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0082625,
+              "upstream_inference_prompt_cost": 0.0062075,
+              "upstream_inference_completions_cost": 0.002055
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.93165,
+          "include_byok_in_limit": false,
+          "usage": 0.06835,
+          "usage_daily": 0.06835,
+          "usage_weekly": 0.06835,
+          "usage_monthly": 0.06835,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.93165,
+          "include_byok_in_limit": false,
+          "usage": 0.06835,
+          "usage_daily": 0.06835,
+          "usage_weekly": 0.06835,
+          "usage_monthly": 0.06835,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:c2129f65d198427f": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "мутации в генах сурфактантных протеинов С",
+      "reason": "Найдено ложное срабатывание: «роза с» является частью фразы «протеинов С», не самостоятельным препаратом/методом/действием и не рекомендацией.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:28.768928+00:00",
+        "finished_at": "2026-04-30T15:56:32.266571+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8223
+        },
+        "response": {
+          "id": "gen-1777564588-u6u8w3ZmjOwaisYfWO3Y",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2239,
+            "completion_tokens": 99,
+            "total_tokens": 2338,
+            "cost": 0.0070825,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0070825,
+              "upstream_inference_prompt_cost": 0.0055975,
+              "upstream_inference_completions_cost": 0.001485
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.93165,
+          "include_byok_in_limit": false,
+          "usage": 0.06835,
+          "usage_daily": 0.06835,
+          "usage_weekly": 0.06835,
+          "usage_monthly": 0.06835,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.93165,
+          "include_byok_in_limit": false,
+          "usage": 0.06835,
+          "usage_daily": 0.06835,
+          "usage_weekly": 0.06835,
+          "usage_monthly": 0.06835,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:7f451e0ebaab2cca": {
+      "label": "error",
+      "target_kind": "marker",
+      "evidence_quote": "Средние или высокие дозы ИГКС+ДДБА (поддерживающая терапия)",
+      "reason": "Выделенный термин используется как поясняющая характеристика режима в строке таблицы, а не как самостоятельное рекомендуемое действие/метод. Это маркер типа терапии, не отдельная actionable рекомендация.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.87,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:32.546289+00:00",
+        "finished_at": "2026-04-30T15:56:38.108644+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7991
+        },
+        "response": {
+          "id": "gen-1777564592-RMws5POKSmC6Gbp2aMc7",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2281,
+            "completion_tokens": 109,
+            "total_tokens": 2390,
+            "cost": 0.0073375,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0073375,
+              "upstream_inference_prompt_cost": 0.0057025,
+              "upstream_inference_completions_cost": 0.001635
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.93165,
+          "include_byok_in_limit": false,
+          "usage": 0.06835,
+          "usage_daily": 0.06835,
+          "usage_weekly": 0.06835,
+          "usage_monthly": 0.06835,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.902595,
+          "include_byok_in_limit": false,
+          "usage": 0.097405,
+          "usage_daily": 0.097405,
+          "usage_weekly": 0.097405,
+          "usage_monthly": 0.097405,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.02905500000000001,
+          "usage_daily_delta": 0.02905500000000001,
+          "usage_weekly_delta": 0.02905500000000001,
+          "usage_monthly_delta": 0.02905500000000001,
+          "limit_remaining_delta": -0.02905499999999961
+        }
+      }
+    },
+    "block:3c3047c05014c765": {
+      "label": "error",
+      "target_kind": "drug",
+      "evidence_quote": "ингибиторов тирозинкиназы рецептора эпидермального фактора роста (EGFR) (Эрлотиниб**, Гефитиниб**)",
+      "reason": "Найденный термин «Фитин» является ложным вхождением внутри другого названия препарата «Гефитиниб» (inside_word=true), а не самостоятельным упоминанием препарата.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:38.314423+00:00",
+        "finished_at": "2026-04-30T15:56:41.847880+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7915
+        },
+        "response": {
+          "id": "gen-1777564598-yPl6BWbdLAIICkDh3UE3",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2193,
+            "completion_tokens": 118,
+            "total_tokens": 2311,
+            "cost": 0.0072525,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0072525,
+              "upstream_inference_prompt_cost": 0.0054825,
+              "upstream_inference_completions_cost": 0.00177
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.902595,
+          "include_byok_in_limit": false,
+          "usage": 0.097405,
+          "usage_daily": 0.097405,
+          "usage_weekly": 0.097405,
+          "usage_monthly": 0.097405,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.007082499999999992,
+          "usage_daily_delta": 0.007082499999999992,
+          "usage_weekly_delta": 0.007082499999999992,
+          "usage_monthly_delta": 0.007082499999999992,
+          "limit_remaining_delta": -0.007082500000002767
+        }
+      }
+    },
+    "block:6d67c0e94dd3944f": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "Данный тезис также правомочен для детей с малыми размерами КСФ.",
+      "reason": "Термин «КСФ» здесь употреблен как обозначение патологии/анатомической особенности в комментарии, а не как рекомендуемое или противопоказанное действие, метод, препарат или режим.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.96,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:42.148809+00:00",
+        "finished_at": "2026-04-30T15:56:44.686882+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8991
+        },
+        "response": {
+          "id": "gen-1777564601-U70cOyAbIznaYn9PVCAo",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2549,
+            "completion_tokens": 103,
+            "total_tokens": 2652,
+            "cost": 0.0079175,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0079175,
+              "upstream_inference_prompt_cost": 0.0063725,
+              "upstream_inference_completions_cost": 0.001545
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:620494f9e7581c1b": {
+      "label": "error",
+      "target_kind": "drug",
+      "evidence_quote": "#Венетоклакс** с децитабином [8]",
+      "reason": "Найденный термин \"Децит\" сработал как подстрока внутри другого названия препарата/слова \"децитабином\" (inside_word=true), а не как самостоятельное упоминание препарата.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:44.904512+00:00",
+        "finished_at": "2026-04-30T15:56:47.199628+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7915
+        },
+        "response": {
+          "id": "gen-1777564604-UxCDj2lKzciBSfaonNmE",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 3089,
+            "completion_tokens": 106,
+            "total_tokens": 3195,
+            "cost": 0.0093125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0093125,
+              "upstream_inference_prompt_cost": 0.0077225,
+              "upstream_inference_completions_cost": 0.00159
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:a865a71bc8881f62": {
+      "label": "recommendation",
+      "target_kind": "drug",
+      "evidence_quote": "При невозможности составления схемы терапии из вышеперечисленных препаратов в схему терапии могут быть включены протионамид** или этионамид**.",
+      "reason": "Выделенный термин — сам препарат протионамид; в локальном контексте прямо сказано, что он может быть включен в схему терапии, то есть это рекомендуемое применение. Вложенное совпадение «он» внутри слова является ложным, но сам блок с «протионамид» валиден.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.97,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:47.841425+00:00",
+        "finished_at": "2026-04-30T15:56:50.730193+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 12693
+        },
+        "response": {
+          "id": "gen-1777564607-vB2p3JIp0a08jSYsDWde",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 3607,
+            "completion_tokens": 150,
+            "total_tokens": 3757,
+            "cost": 0.0112675,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0112675,
+              "upstream_inference_prompt_cost": 0.0090175,
+              "upstream_inference_completions_cost": 0.00225
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:736c3f56ba843033": {
+      "label": "recommendation",
+      "target_kind": "other",
+      "evidence_quote": "При болезни Паркинсона лучше пить растительные отвары и чаи (мята, лимон, ромашка и пр.)",
+      "reason": "Выделенные слова обозначают конкретные компоненты рекомендованных растительных чаев; упоминание находится внутри прямого совета, а не в списке литературы или шуме.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.84,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:51.312264+00:00",
+        "finished_at": "2026-04-30T15:56:54.050807+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8261
+        },
+        "response": {
+          "id": "gen-1777564611-eS71ZypPg3XpwDfVOVQX",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2112,
+            "completion_tokens": 108,
+            "total_tokens": 2220,
+            "cost": 0.0069,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0069,
+              "upstream_inference_prompt_cost": 0.00528,
+              "upstream_inference_completions_cost": 0.00162
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:b0fb79202404502b": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "клетки Гоше легко разрушаются",
+      "reason": "Совпадение на обычной фразе «легко разрушаются», а не на названии препарата, метода или действия; это ложное срабатывание в описательном тексте.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:54.322603+00:00",
+        "finished_at": "2026-04-30T15:56:56.436730+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7918
+        },
+        "response": {
+          "id": "gen-1777564614-QZV7lYsPMH2GqW0QSxCB",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2090,
+            "completion_tokens": 95,
+            "total_tokens": 2185,
+            "cost": 0.00665,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00665,
+              "upstream_inference_prompt_cost": 0.005225,
+              "upstream_inference_completions_cost": 0.001425
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:b59d0f103ad977c6": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "у всех потенциальных кандидатов на трансплантацию поджелудочной железы",
+      "reason": "Найдено внутри другого слова: host_word «потенциальных», inside_word=true. Это ложное срабатывание по подстроке «Потенциал», а не самостоятельное клинически значимое упоминание.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:56:57.708086+00:00",
+        "finished_at": "2026-04-30T15:57:00.268165+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8247
+        },
+        "response": {
+          "id": "gen-1777564617-Ych4FQBSqJwTH8vM1YsF",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2081,
+            "completion_tokens": 109,
+            "total_tokens": 2190,
+            "cost": 0.0068375,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0068375,
+              "upstream_inference_prompt_cost": 0.0052025,
+              "upstream_inference_completions_cost": 0.001635
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:5996b9e58024a2a1": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "Здоровое сердце бьется с частотой 60–100 ударов в минуту",
+      "reason": "Термин употреблен как общеязыковое описание состояния сердца в разделе для пациентов, а не как метод, препарат, действие, противопоказание или ссылка на литературу.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:00.931322+00:00",
+        "finished_at": "2026-04-30T15:57:03.278472+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7973
+        },
+        "response": {
+          "id": "gen-1777564620-5NYEu4XeqqtU6TTLMqDC",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2084,
+            "completion_tokens": 97,
+            "total_tokens": 2181,
+            "cost": 0.006665,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.006665,
+              "upstream_inference_prompt_cost": 0.00521,
+              "upstream_inference_completions_cost": 0.001455
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:ba7dfc5ef17adffd": {
+      "label": "literature_mention",
+      "target_kind": "other",
+      "evidence_quote": "348. Cohen A.S., Burns B., Goadsby P.J. High-Flow Oxygen for Treatment of Cluster Headache // JAMA. 2009.",
+      "reason": "Совпадение находится внутри библиографического списка/ссылок на публикации, а не в тексте рекомендации; сам найденный фрагмент не является назначением.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:03.550382+00:00",
+        "finished_at": "2026-04-30T15:57:07.327418+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7940
+        },
+        "response": {
+          "id": "gen-1777564623-8mnzvmr33CRoGAXYCRZL",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2381,
+            "completion_tokens": 114,
+            "total_tokens": 2495,
+            "cost": 0.0076625,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0076625,
+              "upstream_inference_prompt_cost": 0.0059525,
+              "upstream_inference_completions_cost": 0.00171
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.04334500000000001,
+          "usage_daily_delta": 0.04334500000000001,
+          "usage_weekly_delta": 0.04334500000000001,
+          "usage_monthly_delta": 0.04334500000000001,
+          "limit_remaining_delta": -0.043344999999998635
+        }
+      }
+    },
+    "block:449c2b893469fa4a": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "При КСФ среднего и большого размера также может наблюдаться перкуторное расширение границ сердца",
+      "reason": "«КСФ» здесь — обозначение/аббревиатура анатомического состояния, упомянутая в комментарии с описанием клинической картины, а не рекомендуемое действие, метод, препарат или противопоказание.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.98,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:07.969208+00:00",
+        "finished_at": "2026-04-30T15:57:10.867966+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8836
+        },
+        "response": {
+          "id": "gen-1777564627-2QO8ZfgmX5mUwAOg5mSi",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2460,
+            "completion_tokens": 114,
+            "total_tokens": 2574,
+            "cost": 0.00786,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00786,
+              "upstream_inference_prompt_cost": 0.00615,
+              "upstream_inference_completions_cost": 0.00171
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.04334500000000001,
+          "usage_daily_delta": 0.04334500000000001,
+          "usage_weekly_delta": 0.04334500000000001,
+          "usage_monthly_delta": 0.04334500000000001,
+          "limit_remaining_delta": -0.043344999999998635
+        }
+      }
+    },
+    "block:63791f156c875bfa": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "определяющей снижение адаптационного потенциала личности",
+      "reason": "Найдено в составе обычного слова «потенциала», inside_word=true; это не препарат, не метод и не рекомендуемое действие, а ложное срабатывание по подстроке.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:11.220183+00:00",
+        "finished_at": "2026-04-30T15:57:13.377518+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7938
+        },
+        "response": {
+          "id": "gen-1777564630-AqfCQevfHzPlC7y8PgPV",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2085,
+            "completion_tokens": 98,
+            "total_tokens": 2183,
+            "cost": 0.0066825,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0066825,
+              "upstream_inference_prompt_cost": 0.0052125,
+              "upstream_inference_completions_cost": 0.00147
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:de7295ee547c765d": {
+      "label": "error",
+      "target_kind": "drug",
+      "evidence_quote": "ClinExpReprod Med. 2014 Sep;41(3):108-14.",
+      "reason": "Совпадение внутри слова: искомый термин «Linex» найден как подстрока в названии журнала/слове «ClinExpReprod», а не как самостоятельное упоминание препарата.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:13.557512+00:00",
+        "finished_at": "2026-04-30T15:57:15.990079+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7915
+        },
+        "response": {
+          "id": "gen-1777564633-D7sDdWa54dgl1WTxhSxw",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2227,
+            "completion_tokens": 104,
+            "total_tokens": 2331,
+            "cost": 0.0071275,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0071275,
+              "upstream_inference_prompt_cost": 0.0055675,
+              "upstream_inference_completions_cost": 0.00156
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8955125,
+          "include_byok_in_limit": false,
+          "usage": 0.1044875,
+          "usage_daily": 0.1044875,
+          "usage_weekly": 0.1044875,
+          "usage_monthly": 0.1044875,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.04334500000000001,
+          "usage_daily_delta": 0.04334500000000001,
+          "usage_weekly_delta": 0.04334500000000001,
+          "usage_monthly_delta": 0.04334500000000001,
+          "limit_remaining_delta": -0.043344999999998635
+        }
+      }
+    },
+    "block:4677af438e3b082a": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "некоторые исследователи оценивают его наркогенный потенциал как близкий к веществу фенциклидину",
+      "reason": "Найдено внутри обычного слова «наркогенный потенциалом/потенциал», это не название метода, препарата или действия и не самостоятельная рекомендация; strict filtering для inside_word/common word => error.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:16.345638+00:00",
+        "finished_at": "2026-04-30T15:57:18.857844+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8441
+        },
+        "response": {
+          "id": "gen-1777564636-VnuPUoZJ1WaXWcIqGAYf",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2266,
+            "completion_tokens": 114,
+            "total_tokens": 2380,
+            "cost": 0.007375,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.007375,
+              "upstream_inference_prompt_cost": 0.005665,
+              "upstream_inference_completions_cost": 0.00171
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:3a04fc48c8638894": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "Потенциальная причина",
+      "reason": "Найденный термин является ложным срабатыванием: «Потенциал» встроен в слово «Потенциальная» (inside_word=true), это не самостоятельное упоминание метода/препарата/действия.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:19.058562+00:00",
+        "finished_at": "2026-04-30T15:57:21.374361+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7941
+        },
+        "response": {
+          "id": "gen-1777564638-CXVYpev7NhXdepUiWZLN",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2239,
+            "completion_tokens": 101,
+            "total_tokens": 2340,
+            "cost": 0.0071125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0071125,
+              "upstream_inference_prompt_cost": 0.0055975,
+              "upstream_inference_completions_cost": 0.001515
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:b8f024382eaaad97": {
+      "label": "recommendation",
+      "target_kind": "drug",
+      "evidence_quote": "Рекомендовано пациентам с ИвА при наличии витаминодефицитных состояний применять A11AA Поливитамины в комбинации с минеральными веществами",
+      "reason": "Выделенный термин «Поливитамины» сам указан как средство, которое рекомендовано применять; рядом есть сила рекомендации и уровень доказательности.",
+      "recommendation_strength": "C",
+      "evidence_level": "5",
+      "confidence": 0.97,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:21.946527+00:00",
+        "finished_at": "2026-04-30T15:57:24.389128+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8670
+        },
+        "response": {
+          "id": "gen-1777564641-STqxHj8mb4SMj0RsndqS",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2436,
+            "completion_tokens": 112,
+            "total_tokens": 2548,
+            "cost": 0.00777,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00777,
+              "upstream_inference_prompt_cost": 0.00609,
+              "upstream_inference_completions_cost": 0.00168
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8147225,
+          "include_byok_in_limit": false,
+          "usage": 0.1852775,
+          "usage_daily": 0.1852775,
+          "usage_weekly": 0.1852775,
+          "usage_monthly": 0.1852775,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.037445000000000006,
+          "usage_daily_delta": 0.037445000000000006,
+          "usage_weekly_delta": 0.037445000000000006,
+          "usage_monthly_delta": 0.037445000000000006,
+          "limit_remaining_delta": -0.03744500000000173
+        }
+      }
+    },
+    "block:68d5e48032a046aa": {
+      "label": "error",
+      "target_kind": "marker",
+      "evidence_quote": "Порядок оказания медицинской помощи по профилю «остеопатия», требования к врачу-остеопату",
+      "reason": "Упоминание относится к названию профиля медицинской помощи/документационному разделу, а не к рекомендации или запрету самой остеопатии как метода.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.98,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:24.695975+00:00",
+        "finished_at": "2026-04-30T15:57:27.127531+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8549
+        },
+        "response": {
+          "id": "gen-1777564644-a0Su0OdIi4GdciLrB6uz",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2391,
+            "completion_tokens": 106,
+            "total_tokens": 2497,
+            "cost": 0.0075675,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0075675,
+              "upstream_inference_prompt_cost": 0.0059775,
+              "upstream_inference_completions_cost": 0.00159
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8147225,
+          "include_byok_in_limit": false,
+          "usage": 0.1852775,
+          "usage_daily": 0.1852775,
+          "usage_weekly": 0.1852775,
+          "usage_monthly": 0.1852775,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": -0.037445000000000006,
+          "usage_daily_delta": -0.037445000000000006,
+          "usage_weekly_delta": -0.037445000000000006,
+          "usage_monthly_delta": -0.037445000000000006,
+          "limit_remaining_delta": 0.03744500000000173
+        }
+      }
+    },
+    "block:9f2879462db79236": {
+      "label": "literature_mention",
+      "target_kind": "drug",
+      "evidence_quote": "244. Мазина Н.К., Шешунов И.В., Мазин П.В. Адъювантная энергопротекция реамберином в практике интенсивной терапии и реанимации: эффективность по данным метаанализа",
+      "reason": "Упоминание термина находится в библиографическом списке литературы, это название публикации, а не рекомендация или противопоказание.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:27.342373+00:00",
+        "finished_at": "2026-04-30T15:57:30.540443+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8091
+        },
+        "response": {
+          "id": "gen-1777564647-1aOHFgKNwNNY6sWqSy66",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2630,
+            "completion_tokens": 128,
+            "total_tokens": 2758,
+            "cost": 0.008495,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.008495,
+              "upstream_inference_prompt_cost": 0.006575,
+              "upstream_inference_completions_cost": 0.00192
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8147225,
+          "include_byok_in_limit": false,
+          "usage": 0.1852775,
+          "usage_daily": 0.1852775,
+          "usage_weekly": 0.1852775,
+          "usage_monthly": 0.1852775,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": -0.037445000000000006,
+          "usage_daily_delta": -0.037445000000000006,
+          "usage_weekly_delta": -0.037445000000000006,
+          "usage_monthly_delta": -0.037445000000000006,
+          "limit_remaining_delta": 0.03744500000000173
+        }
+      }
+    },
+    "block:f8702c43e6b0223d": {
+      "label": "recommendation",
+      "target_kind": "drug",
+      "evidence_quote": "Рекомендуется гопантеновая кислота с целью коррекции высших психических функций у детей с умственной отсталостью.",
+      "reason": "Выделенный термин является самим препаратом, который прямо рекомендуется в тексте. В том же фрагменте указаны сила рекомендации и уровень доказательности.",
+      "recommendation_strength": "C",
+      "evidence_level": "4",
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:30.743881+00:00",
+        "finished_at": "2026-04-30T15:57:33.118223+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8169
+        },
+        "response": {
+          "id": "gen-1777564650-cuicXgqSCg12Jzm6Bmsc",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2033,
+            "completion_tokens": 103,
+            "total_tokens": 2136,
+            "cost": 0.0066275,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0066275,
+              "upstream_inference_prompt_cost": 0.0050825,
+              "upstream_inference_completions_cost": 0.001545
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:b0affc3998b09284": {
+      "label": "contraindication",
+      "target_kind": "marker",
+      "evidence_quote": "Этап поддерживающей терапии • Больным AL-A поддерживающая терапия не рекомендуется [125]. Уровень убедительности рекомендаций С (уровень достоверности доказательств − 4).",
+      "reason": "Выделенный термин сам является методом лечения, который в данном абзаце прямо указан как не рекомендуемый.",
+      "recommendation_strength": "C",
+      "evidence_level": "4",
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:33.336908+00:00",
+        "finished_at": "2026-04-30T15:57:35.418308+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8631
+        },
+        "response": {
+          "id": "gen-1777564653-wMRSIb8aUgsNdQ996WVe",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2518,
+            "completion_tokens": 110,
+            "total_tokens": 2628,
+            "cost": 0.007945,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.007945,
+              "upstream_inference_prompt_cost": 0.006295,
+              "upstream_inference_completions_cost": 0.00165
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:d6469429d7536345": {
+      "label": "recommendation",
+      "target_kind": "drug",
+      "evidence_quote": "При недостаточной эффективности БАБ и БКК у больных микрососудистой стенокардией для профилактики приступов рекомендуется назначать никорандил, ранолазин, ивабрадин, триметазидин [287].",
+      "reason": "Выделенный термин сам является препаратом, который прямо указан в фразе с рекомендацией назначения.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.98,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:35.631870+00:00",
+        "finished_at": "2026-04-30T15:57:37.826229+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 10594
+        },
+        "response": {
+          "id": "gen-1777564655-SE8nPAxYHXZefxm9MNNF",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 3221,
+            "completion_tokens": 116,
+            "total_tokens": 3337,
+            "cost": 0.0097925,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0097925,
+              "upstream_inference_prompt_cost": 0.0080525,
+              "upstream_inference_completions_cost": 0.00174
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:2eed74140080c5b1": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "направленное на выявление потенциальных источников кровотечений",
+      "reason": "Найденный термин является ложным срабатыванием: host_word «потенциальных» содержит внутри подстроку «Потенциал» (inside_word=true), но сам не является отдельным клиническим объектом, методом или действием.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:38.083093+00:00",
+        "finished_at": "2026-04-30T15:57:40.654647+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 9852
+        },
+        "response": {
+          "id": "gen-1777564657-w5gZ0B1S0RRFd7EaeohH",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2853,
+            "completion_tokens": 112,
+            "total_tokens": 2965,
+            "cost": 0.0088125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0088125,
+              "upstream_inference_prompt_cost": 0.0071325,
+              "upstream_inference_completions_cost": 0.00168
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    },
+    "block:f2ec3d3ded5901d2": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "Потенциальное влияние БК на рост",
+      "reason": "Найденный термин «Потенциал» сработал внутри обычного слова «Потенциальное/потенциальная» (inside_word=true), это ложное вхождение, не обозначает препарат, метод или рекомендацию.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:41.030944+00:00",
+        "finished_at": "2026-04-30T15:57:43.329287+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 8391
+        },
+        "response": {
+          "id": "gen-1777564660-rQIXLSnBh4bWw5icIZgr",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2168,
+            "completion_tokens": 105,
+            "total_tokens": 2273,
+            "cost": 0.006995,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.006995,
+              "upstream_inference_prompt_cost": 0.00542,
+              "upstream_inference_completions_cost": 0.001575
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.8521675,
+          "include_byok_in_limit": false,
+          "usage": 0.1478325,
+          "usage_daily": 0.1478325,
+          "usage_weekly": 0.1478325,
+          "usage_monthly": 0.1478325,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.756295,
+          "include_byok_in_limit": false,
+          "usage": 0.243705,
+          "usage_daily": 0.243705,
+          "usage_weekly": 0.243705,
+          "usage_monthly": 0.243705,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0958725,
+          "usage_daily_delta": 0.0958725,
+          "usage_weekly_delta": 0.0958725,
+          "usage_monthly_delta": 0.0958725,
+          "limit_remaining_delta": -0.0958724999999987
+        }
+      }
+    },
+    "block:f04231f3ac3e66bf": {
+      "label": "error",
+      "target_kind": "other",
+      "evidence_quote": "их потенциальными результатами и осложнениями",
+      "reason": "Найденный термин является ложным срабатыванием: «Потенциал» совпал как подстрока внутри обычного слова «потенциальными» (inside_word=true), а не как самостоятельное клинически значимое упоминание.",
+      "recommendation_strength": null,
+      "evidence_level": null,
+      "confidence": 0.99,
+      "_openrouter": {
+        "started_at": "2026-04-30T15:57:44.701369+00:00",
+        "finished_at": "2026-04-30T15:57:47.355563+00:00",
+        "request": {
+          "model": "openai/gpt-5.4",
+          "max_tokens": 1200,
+          "message_count": 2,
+          "message_chars": 7927
+        },
+        "response": {
+          "id": "gen-1777564664-3JK6njXodvjZEarouGc8",
+          "model": "openai/gpt-5.4-20260305",
+          "usage": {
+            "prompt_tokens": 2507,
+            "completion_tokens": 106,
+            "total_tokens": 2613,
+            "cost": 0.0078575,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0078575,
+              "upstream_inference_prompt_cost": 0.0062675,
+              "upstream_inference_completions_cost": 0.00159
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "finish_reason": "stop"
+        },
+        "key_before": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.756295,
+          "include_byok_in_limit": false,
+          "usage": 0.243705,
+          "usage_daily": 0.243705,
+          "usage_weekly": 0.243705,
+          "usage_monthly": 0.243705,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_after": {
+          "label": "sk-or-v1-eb3...caa",
+          "is_management_key": false,
+          "is_provisioning_key": false,
+          "limit": 30,
+          "limit_reset": null,
+          "limit_remaining": 29.756295,
+          "include_byok_in_limit": false,
+          "usage": 0.243705,
+          "usage_daily": 0.243705,
+          "usage_weekly": 0.243705,
+          "usage_monthly": 0.243705,
+          "byok_usage": 0,
+          "byok_usage_daily": 0,
+          "byok_usage_weekly": 0,
+          "byok_usage_monthly": 0,
+          "is_free_tier": false,
+          "expires_at": null,
+          "creator_user_id": "user_2vJhjAE2bzR0GKRUeT3UVNUOWNJ",
+          "rate_limit": {
+            "requests": -1,
+            "interval": "10s",
+            "note": "This field is deprecated and safe to ignore."
+          }
+        },
+        "key_delta": {
+          "usage_delta": 0.0,
+          "usage_daily_delta": 0.0,
+          "usage_weekly_delta": 0.0,
+          "usage_monthly_delta": 0.0,
+          "limit_remaining_delta": 0.0
+        }
+      }
+    }
+  },
+  "score": {
+    "total": 40,
+    "label_accuracy": 0.825,
+    "recommendation_strength_accuracy": 0.85,
+    "evidence_level_accuracy": 0.825,
+    "confusion_matrix": {
+      "contraindication": {
+        "contraindication": 2,
+        "error": 1,
+        "literature_mention": 0,
+        "recommendation": 0,
+        "unclear": 0
+      },
+      "error": {
+        "contraindication": 0,
+        "error": 19,
+        "literature_mention": 0,
+        "recommendation": 0,
+        "unclear": 0
+      },
+      "literature_mention": {
+        "contraindication": 0,
+        "error": 1,
+        "literature_mention": 2,
+        "recommendation": 0,
+        "unclear": 0
+      },
+      "recommendation": {
+        "contraindication": 0,
+        "error": 5,
+        "literature_mention": 0,
+        "recommendation": 10,
+        "unclear": 0
+      },
+      "unclear": {
+        "contraindication": 0,
+        "error": 0,
+        "literature_mention": 0,
+        "recommendation": 0,
+        "unclear": 0
+      }
+    },
+    "per_label": {
+      "contraindication": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "error": {
+        "tp": 19,
+        "fp": 7,
+        "fn": 0,
+        "precision": 0.7307692307692307,
+        "recall": 1.0,
+        "f1": 0.8444444444444443
+      },
+      "literature_mention": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "recommendation": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 5,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "unclear": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "rows": [
+      {
+        "block_id": "block:7e97fee0a6d3912a",
+        "gold_label": "contraindication",
+        "pred_label": "error",
+        "label_ok": false,
+        "gold_recommendation_strength": "C",
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": false,
+        "gold_evidence_level": "5",
+        "pred_evidence_level": null,
+        "evidence_ok": false
+      },
+      {
+        "block_id": "block:d156d6d2f0a57690",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:b270f87c2facb0b2",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:010340027c564110",
+        "gold_label": "recommendation",
+        "pred_label": "error",
+        "label_ok": false,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:cf732de3c39ecb98",
+        "gold_label": "recommendation",
+        "pred_label": "recommendation",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:d5b1311a25b3a80c",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:bd063171f834f92c",
+        "gold_label": "contraindication",
+        "pred_label": "contraindication",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:758d89cc5ad6b007",
+        "gold_label": "recommendation",
+        "pred_label": "recommendation",
+        "label_ok": true,
+        "gold_recommendation_strength": "A",
+        "pred_recommendation_strength": "C",
+        "recommendation_strength_ok": false,
+        "gold_evidence_level": "3",
+        "pred_evidence_level": "4",
+        "evidence_ok": false
+      },
+      {
+        "block_id": "block:24f962002b797b11",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:5c2d42c63da3797a",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:d250eec39a7f3951",
+        "gold_label": "recommendation",
+        "pred_label": "recommendation",
+        "label_ok": true,
+        "gold_recommendation_strength": "B",
+        "pred_recommendation_strength": "B",
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": "1",
+        "evidence_ok": false
+      },
+      {
+        "block_id": "block:6a21428063128b2b",
+        "gold_label": "recommendation",
+        "pred_label": "recommendation",
+        "label_ok": true,
+        "gold_recommendation_strength": "C",
+        "pred_recommendation_strength": "C",
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": "4",
+        "pred_evidence_level": "4",
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:fcd5eefdeae4532b",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:885ffd418ec8d767",
+        "gold_label": "recommendation",
+        "pred_label": "recommendation",
+        "label_ok": true,
+        "gold_recommendation_strength": "C",
+        "pred_recommendation_strength": "C",
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": "2",
+        "pred_evidence_level": "2",
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:d18056cb48d1ca33",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:c2129f65d198427f",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:7f451e0ebaab2cca",
+        "gold_label": "recommendation",
+        "pred_label": "error",
+        "label_ok": false,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:3c3047c05014c765",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:6d67c0e94dd3944f",
+        "gold_label": "recommendation",
+        "pred_label": "error",
+        "label_ok": false,
+        "gold_recommendation_strength": "C",
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": false,
+        "gold_evidence_level": "5",
+        "pred_evidence_level": null,
+        "evidence_ok": false
+      },
+      {
+        "block_id": "block:620494f9e7581c1b",
+        "gold_label": "recommendation",
+        "pred_label": "error",
+        "label_ok": false,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:a865a71bc8881f62",
+        "gold_label": "recommendation",
+        "pred_label": "recommendation",
+        "label_ok": true,
+        "gold_recommendation_strength": "B",
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": false,
+        "gold_evidence_level": "2",
+        "pred_evidence_level": null,
+        "evidence_ok": false
+      },
+      {
+        "block_id": "block:736c3f56ba843033",
+        "gold_label": "recommendation",
+        "pred_label": "recommendation",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:b0fb79202404502b",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:b59d0f103ad977c6",
+        "gold_label": "recommendation",
+        "pred_label": "error",
+        "label_ok": false,
+        "gold_recommendation_strength": "C",
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": false,
+        "gold_evidence_level": "4",
+        "pred_evidence_level": null,
+        "evidence_ok": false
+      },
+      {
+        "block_id": "block:5996b9e58024a2a1",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:ba7dfc5ef17adffd",
+        "gold_label": "literature_mention",
+        "pred_label": "literature_mention",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:449c2b893469fa4a",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:63791f156c875bfa",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:de7295ee547c765d",
+        "gold_label": "literature_mention",
+        "pred_label": "error",
+        "label_ok": false,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:4677af438e3b082a",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:3a04fc48c8638894",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:b8f024382eaaad97",
+        "gold_label": "recommendation",
+        "pred_label": "recommendation",
+        "label_ok": true,
+        "gold_recommendation_strength": "C",
+        "pred_recommendation_strength": "C",
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": "5",
+        "pred_evidence_level": "5",
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:68d5e48032a046aa",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:9f2879462db79236",
+        "gold_label": "literature_mention",
+        "pred_label": "literature_mention",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:f8702c43e6b0223d",
+        "gold_label": "recommendation",
+        "pred_label": "recommendation",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": "C",
+        "recommendation_strength_ok": false,
+        "gold_evidence_level": null,
+        "pred_evidence_level": "4",
+        "evidence_ok": false
+      },
+      {
+        "block_id": "block:b0affc3998b09284",
+        "gold_label": "contraindication",
+        "pred_label": "contraindication",
+        "label_ok": true,
+        "gold_recommendation_strength": "C",
+        "pred_recommendation_strength": "C",
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": "4",
+        "pred_evidence_level": "4",
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:d6469429d7536345",
+        "gold_label": "recommendation",
+        "pred_label": "recommendation",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:2eed74140080c5b1",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:f2ec3d3ded5901d2",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      },
+      {
+        "block_id": "block:f04231f3ac3e66bf",
+        "gold_label": "error",
+        "pred_label": "error",
+        "label_ok": true,
+        "gold_recommendation_strength": null,
+        "pred_recommendation_strength": null,
+        "recommendation_strength_ok": true,
+        "gold_evidence_level": null,
+        "pred_evidence_level": null,
+        "evidence_ok": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+.git
+.pytest_cache
+__pycache__
+*.py[cod]
+old
+reports
+data/input/*.json
+data/input/*.pdf
+data/input/*.html
+data/input/*_files

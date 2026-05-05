@@ -1,0 +1,2 @@
+term,host_word,action,reason,confidence,created_at
+Онко,Онкология,reject,false_positive_inside_word,1,2026-04-29

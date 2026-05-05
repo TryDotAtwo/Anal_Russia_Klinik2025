@@ -1,0 +1,99 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Visual Studio and editors
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.tmp
+*~
+Thumbs.db
+Desktop.ini
+
+# Secrets
+.env
+*.env
+!*.env.example
+Bot_for_anal_rec/config/openrouter.env
+Bot_for_anal_rec/config/*.local
+
+# Logs and local browser state
+*.log
+Bot_for_anal_rec/reports/**/*.log
+Bot_for_anal_rec/.playwright-mcp/
+Bot_for_anal_rec/bot-dashboard-smoke.png
+
+# Legacy and local-only material
+Bot_for_anal_rec/old/
+Bot_for_anal_rec/Old/
+Bot_for_anal_rec/har_and_cookies/
+Bot_for_anal_rec/РќРѕРІР°СЏ РІРµСЂСЃРёСЏ/
+Bot_for_anal_rec/Р Р°СЃСЃС‚СЂРµР»СЊРЅС‹Р№ СЃРїРёСЃРѕРє РїСЂРµРїР°СЂР°С‚РѕРІ*
+
+# Generated run folders
+Bot_for_anal_rec/runs/
+Bot_for_anal_rec/reports/default/
+Bot_for_anal_rec/reports/smoke/
+Bot_for_anal_rec/reports/g4f/
+
+# Aho generated reports.
+Bot_for_anal_rec/reports/aho/__pycache__/
+Bot_for_anal_rec/reports/aho/partials/
+Bot_for_anal_rec/reports/aho/host_words_by_search_word.json
+Bot_for_anal_rec/reports/aho/host_words_compact.before_*.json
+
+# Keep Aho scripts, dashboard, manual filters, and compact/filtered results.
+!Bot_for_anal_rec/reports/aho/aho_filter_dashboard.py
+!Bot_for_anal_rec/reports/aho/apply_host_word_filters.py
+!Bot_for_anal_rec/reports/aho/filter_detailed_host_words.py
+!Bot_for_anal_rec/reports/aho/group_filtered_locations.py
+!Bot_for_anal_rec/reports/aho/dashboard/
+!Bot_for_anal_rec/reports/aho/dashboard/index.html
+!Bot_for_anal_rec/reports/aho/host_word_filters.json
+!Bot_for_anal_rec/reports/aho/host_word_filters_parts/
+!Bot_for_anal_rec/reports/aho/host_word_filters_parts/*.json
+!Bot_for_anal_rec/reports/aho/host_words_compact.json
+!Bot_for_anal_rec/reports/aho/host_words_filtered_compact.json
+!Bot_for_anal_rec/reports/aho/host_words_by_search_word_filtred.json
+!Bot_for_anal_rec/reports/aho/host_words_by_location_filtred.json
+
+# LLM generated reports.
+Bot_for_anal_rec/reports/llm/reports/
+Bot_for_anal_rec/reports/llm/llm_review_cases.json
+
+# Keep LLM scripts, manual labels, manual excludes, and OpenRouter outputs.
+!Bot_for_anal_rec/reports/llm/README.md
+!Bot_for_anal_rec/reports/llm/build_llm_review_cases.py
+!Bot_for_anal_rec/reports/llm/llm_audit_dashboard.py
+!Bot_for_anal_rec/reports/llm/run_openrouter_gold40.py
+!Bot_for_anal_rec/reports/llm/run_openrouter_all.py
+!Bot_for_anal_rec/reports/llm/excluded_preparations.json
+!Bot_for_anal_rec/reports/llm/llm_gold_40*.json
+!Bot_for_anal_rec/reports/llm/openrouter_gold40*.json
+!Bot_for_anal_rec/reports/llm/openrouter_all_results*.json
+
+# Input data: keep JSON dictionaries except GitHub-blocking large source.
+Bot_for_anal_rec/data/input/*.pdf
+Bot_for_anal_rec/data/input/*.html
+Bot_for_anal_rec/data/input/*_files/
+Bot_for_anal_rec/data/input/clinical_recommendations.json
+Bot_for_anal_rec/data/input/drugs.json
+!Bot_for_anal_rec/data/input/README.md
+!Bot_for_anal_rec/data/input/.gitkeep
+!Bot_for_anal_rec/data/input/*.json
+Bot_for_anal_rec/data/input/clinical_recommendations.json

@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "source": "mediq",
+      "term_id": "mediq:275b055a39df",
+      "canonical": "Окс",
+      "search_word": "Окс",
+      "host_word": "антиоксидантами",
+      "created_at": "2026-05-01T09:52:04.761615+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:7d0893525c75",
+      "canonical": "Потенциал",
+      "search_word": "Потенциал",
+      "host_word": "потенциальными",
+      "created_at": "2026-05-01T09:52:38.401030+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:5e19bfc0dd40",
+      "canonical": "Поливит",
+      "search_word": "Поливит",
+      "host_word": "поливитаминные",
+      "created_at": "2026-05-01T09:54:40.694104+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:b95e243a5fcf",
+      "canonical": "ИЗ",
+      "search_word": "ИЗ",
+      "host_word": "лизоцим",
+      "created_at": "2026-05-01T09:54:49.724793+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:78dd81637045",
+      "canonical": "Здоровое сердце",
+      "search_word": "Здоровое сердце",
+      "host_word": "Здоровое сердце",
+      "created_at": "2026-05-01T10:19:58.153938+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:bdfb1af9f20c",
+      "canonical": "ОН",
+      "search_word": "ОН",
+      "host_word": "протионамид",
+      "created_at": "2026-05-01T10:20:30.127799+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:ad52cfcd21a3",
+      "canonical": "Бор",
+      "search_word": "Бор",
+      "host_word": "бор",
+      "created_at": "2026-05-01T10:20:40.673432+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:13e497fc4657",
+      "canonical": "Акустик",
+      "search_word": "Акустик",
+      "host_word": "акустика",
+      "created_at": "2026-05-01T10:20:53.756196+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:8f9173d9becc",
+      "canonical": "Лей де",
+      "search_word": "Лей де",
+      "host_word": "лей де",
+      "created_at": "2026-05-01T10:36:00.637662+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:87042c0c0996",
+      "canonical": "Роза С",
+      "search_word": "Роза С",
+      "host_word": "роза с",
+      "created_at": "2026-05-01T17:32:40.612962+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:001257bf058c",
+      "canonical": "Ван Би",
+      "search_word": "Ван Би",
+      "host_word": "ван би",
+      "created_at": "2026-05-01T17:34:22.987496+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:d77cd4321f59",
+      "canonical": "Алина",
+      "search_word": "Алина",
+      "host_word": "Ренгалина",
+      "created_at": "2026-05-02T15:23:16.868670+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:15e718f0efcf",
+      "canonical": "ЛимфоТок",
+      "search_word": "ЛимфоТок",
+      "host_word": "лимфотока",
+      "created_at": "2026-05-02T15:26:30.727367+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:a671d2fa23db",
+      "canonical": "МСМ",
+      "search_word": "МСМ",
+      "host_word": "МСМ",
+      "created_at": "2026-05-04T09:19:34.340035+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:1d91ab564afb",
+      "canonical": "Лекс",
+      "search_word": "Лекс",
+      "host_word": "рефлексотерапия",
+      "created_at": "2026-05-04T09:20:53.608942+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:ccc2a4f64ff9",
+      "canonical": "Легко Раз",
+      "search_word": "Легко Раз",
+      "host_word": "легко раз",
+      "created_at": "2026-05-04T09:22:34.863216+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:6dd9e947e53f",
+      "canonical": "1+1",
+      "search_word": "1+1",
+      "host_word": "+1 ",
+      "created_at": "2026-05-04T09:23:29.448323+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:683b1f3d2c4b",
+      "canonical": "Т-2",
+      "search_word": "Т-2",
+      "host_word": "Т-2",
+      "created_at": "2026-05-04T10:36:06.791510+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:6a9b47495269",
+      "canonical": "Т-3",
+      "search_word": "Т-3",
+      "host_word": "Т-3",
+      "created_at": "2026-05-04T10:36:08.040067+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:b3af00f34024",
+      "canonical": "АТП",
+      "search_word": "АТП",
+      "host_word": "АТП",
+      "created_at": "2026-05-04T10:36:12.426729+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:664d008ecb76",
+      "canonical": "Бальзам",
+      "search_word": "Бальзам",
+      "host_word": "бальзам",
+      "created_at": "2026-05-04T11:01:13.944844+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:0641075c150b",
+      "canonical": "Хром",
+      "search_word": "Хром",
+      "host_word": "хром",
+      "created_at": "2026-05-04T11:01:22.714847+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:c3081536e253",
+      "canonical": "Дерматол",
+      "search_word": "Дерматол",
+      "host_word": "дерматол",
+      "created_at": "2026-05-04T11:01:33.231550+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:3cc0ebb174bb",
+      "canonical": "ИФР-1",
+      "search_word": "ИФР-1",
+      "host_word": "ИФР-1",
+      "created_at": "2026-05-04T11:01:39.479375+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:9b98f222ccc5",
+      "canonical": "Укроп",
+      "search_word": "Укроп",
+      "host_word": "укроп",
+      "created_at": "2026-05-04T11:01:50.689260+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:2086de06d845",
+      "canonical": "Здоровый сон",
+      "search_word": "Здоровый сон",
+      "host_word": "здоровый сон",
+      "created_at": "2026-05-04T11:01:55.232401+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:5f84fdd730dc",
+      "canonical": "120/80",
+      "search_word": "120/80",
+      "host_word": "120/80",
+      "created_at": "2026-05-04T11:01:59.661349+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:10bb30766f78",
+      "canonical": "Ананас",
+      "search_word": "Ананас",
+      "host_word": "ананас",
+      "created_at": "2026-05-04T11:02:06.565566+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:38ee2d4d91f3",
+      "canonical": "Диаб",
+      "search_word": "Диаб",
+      "host_word": "Диаб",
+      "created_at": "2026-05-04T11:02:36.595658+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:4262c7551693",
+      "canonical": "Череда",
+      "search_word": "Череда",
+      "host_word": "череда",
+      "created_at": "2026-05-04T11:02:50.351527+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:80c8f0b729a7",
+      "canonical": "Идеал",
+      "search_word": "Идеал",
+      "host_word": "идеальное",
+      "created_at": "2026-05-04T11:03:01.165526+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "blacklist",
+      "term_id": "blacklist:3d51840b4709",
+      "canonical": "Дона",
+      "search_word": "Дона",
+      "host_word": "теризидона",
+      "created_at": "2026-05-04T11:03:25.181295+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:bee22a09ceee",
+      "canonical": "Флекс",
+      "search_word": "Флекс",
+      "host_word": "иглорефлексотерапия",
+      "created_at": "2026-05-04T11:03:37.078312+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:63275f7b6983",
+      "canonical": "Флексотер",
+      "search_word": "Флексотер",
+      "host_word": "иглорефлексотерапия",
+      "created_at": "2026-05-04T11:03:40.508071+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:ef6c35e40ae4",
+      "canonical": "Ритм",
+      "search_word": "Ритм",
+      "host_word": "Ритм",
+      "created_at": "2026-05-04T11:03:57.342563+00:00",
+      "reason": "dashboard_exclude_preparation"
+    },
+    {
+      "source": "mediq",
+      "term_id": "mediq:02509e7535dd",
+      "canonical": "Д сан",
+      "search_word": "Д сан",
+      "host_word": "д сан",
+      "created_at": "2026-05-04T11:04:13.861572+00:00",
+      "reason": "dashboard_exclude_preparation"
+    }
+  ]
+}

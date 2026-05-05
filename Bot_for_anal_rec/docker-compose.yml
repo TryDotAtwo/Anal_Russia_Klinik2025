@@ -1,0 +1,51 @@
+services:
+  app:
+    build: .
+    image: anal-russia-klinik:local
+    working_dir: /app
+    volumes:
+      - ./data/input:/app/data/input:ro
+      - ./config:/app/config:ro
+      - ./reports:/app/reports
+    environment:
+      ANAL_RUSSIA_KLINIK_PREPARATIONS_PATH: /app/data/input/drugs.json
+      ANAL_RUSSIA_KLINIK_BLACKLIST_PATH: /app/data/input/blacklist_drugs.json
+      ANAL_RUSSIA_KLINIK_MARKERS_PATH: /app/data/input/AXTUNG.Json
+      ANAL_RUSSIA_KLINIK_CLINICAL_JSON: /app/data/input/clinical_recommendations.json
+      ANAL_RUSSIA_KLINIK_METADATA_PATH: /app/data/input/MetaData.json
+      ANAL_RUSSIA_KLINIK_FILTERS_PATH: /app/config/manual_filters.csv
+      ANAL_RUSSIA_KLINIK_OUTPUT_DIR: /app/reports/default
+    command: ["--help"]
+
+  aho:
+    image: anal-russia-klinik:local
+    build: .
+    working_dir: /app
+    volumes:
+      - ./data/input:/app/data/input:ro
+      - ./reports:/app/reports
+    environment:
+      ANAL_RUSSIA_KLINIK_PREPARATIONS_PATH: /app/data/input/drugs.json
+      ANAL_RUSSIA_KLINIK_BLACKLIST_PATH: /app/data/input/blacklist_drugs.json
+      ANAL_RUSSIA_KLINIK_MARKERS_PATH: /app/data/input/AXTUNG.Json
+      ANAL_RUSSIA_KLINIK_CLINICAL_JSON: /app/data/input/clinical_recommendations.json
+      ANAL_RUSSIA_KLINIK_JSON_INDENT: "2"
+    command:
+      - aho-report
+      - --workers
+      - "16"
+      - --output
+      - /app/reports/aho/host_words_by_search_word.json
+      - --partials-dir
+      - /app/reports/aho/partials
+
+  g4f-smoke:
+    image: anal-russia-klinik:local
+    build: .
+    working_dir: /app
+    volumes:
+      - ./reports:/app/reports
+    command:
+      - g4f-smoke
+      - --output
+      - /app/reports/g4f/g4f_smoke.json
