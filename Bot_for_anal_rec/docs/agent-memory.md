@@ -261,3 +261,8 @@
 - Rebuild verified: 488 CSV rows, 5688 case predictions, expert=3071 recommendations/115 contraindications, gold=4086 blocks/11 pages, exclusions=36.
 - Source occurrence counts 4307/1431/716 differ from sums of per-document unique terms in CSV (1925/517/367); both are valid distinct metrics.
 - Snapshot restore/check, sample fake pipeline and 37 tests passed. No new paid LLM requests; Docker not tested.
+
+## 2026-09-16 highlighted clinical examples
+
+- User requested concrete striking cases at the very top of root README. Added source-linked B1 acupuncture cases (237_6 GI motility; 164_2 xerostomia), contextual A1 menopause example (117_2; level belongs to umbrella recommendation), and A1 chondroitin/glucosamine case (870_1).
+- docs/highlighted-cases.md records short quotes, purpose, block/case IDs and scope. Levels verified against saved corpus; current online full text and evidence-study quality were not revalidated.
