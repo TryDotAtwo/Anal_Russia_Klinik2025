@@ -49,3 +49,7 @@
   **Цель:** Максимально полный поиск спорных препаратов/маркеров без ранней отсечки; ручные фильтры являются обязательным слоем контроля ложных совпадений.
   **Проверка:** `py -m pytest -q`; sample smoke через `provider=fake`.
 
+
+### 2026-09-16: self-contained saved-result publication
+
+Included checked gzip inputs, offline restore tool, report/review generators and static outputs. Added Pillow extra and documented two distinct source-count metrics. Published accumulated local runner safety fixes. Validation: 37 tests; snapshot SHA-256; fake sample run; all three artifact generators. Original LLM answer JSON unchanged.

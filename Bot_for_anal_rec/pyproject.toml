@@ -17,6 +17,7 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest"]
+reports = ["Pillow>=10"]
 
 [project.scripts]
 anal-russia-klinik = "anal_russia_klinik.cli:main"

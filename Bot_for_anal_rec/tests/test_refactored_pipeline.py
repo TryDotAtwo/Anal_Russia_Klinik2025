@@ -442,7 +442,7 @@ def test_openrouter_output_token_budget_scales_with_case_count(monkeypatch) -> N
     monkeypatch.delenv("OPENROUTER_MAX_TOKENS", raising=False)
     block = {"case_ids": [f"case:{index}" for index in range(8)]}
 
-    assert max_tokens_for_block(block) == 3250
+    assert max_tokens_for_block(block) == 4950
 
     monkeypatch.setenv("OPENROUTER_MAX_TOKENS", "777")
 

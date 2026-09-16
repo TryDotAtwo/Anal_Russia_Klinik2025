@@ -1,228 +1,110 @@
-# Anal Russia Klinik 2025
+# Anal Russia Klinik — запуск и воспроизведение
 
-Пайплайн для поиска потенциально спорных упоминаний препаратов в российских клинических рекомендациях.
+Актуальные результаты, качество LLM и состав моделей описаны в [главном README](../README.md). Последний сохранённый результат — 5 мая 2026; комплект для воспроизведения опубликован 16 сентября 2026.
 
-Проект объединяет словарный поиск, ручные фильтры, отчеты Aho-Corasick, подготовку кейсов для LLM и аудит ответов OpenRouter.
+## Установка и восстановление
 
-## Состояние результатов — сверено 16 сентября 2026
-
-Последний найденный итоговый отчёт — от **5 мая 2026**, 4 121 блок и 5 688 оценок упоминаний. Полные метрики, состав моделей и ограничения оценки приведены в [главном README репозитория](../README.md). Источник актуальных чисел — `reports/llm/openrouter_all_results.json`; файл `.current.json` является устаревшим промежуточным снимком.
-
-## Что делает проект
-
-- Загружает клинические рекомендации из JSON.
-- Загружает справочники препаратов, blacklist и ручные маркеры.
-- Ищет совпадения с высоким recall через Aho-Corasick.
-- Отделяет полезные совпадения от ложных совпадений через ручные фильтры.
-- Группирует найденные позиции в LLM-блоки.
-- Запускает LLM-проверку через OpenRouter или тестовый fake-провайдер.
-- Хранит ручные фильтры, gold-разметку и полезные результаты OpenRouter в Git.
-
-## Быстрый старт
-
-Требования:
-
-- Python 3.11 или новее.
-- Docker Desktop, если нужен полный контейнерный прогон.
-- OpenRouter API key, если нужен реальный LLM-прогон.
-
-Установка зависимостей:
+Из корня репозитория:
 
 ```powershell
-py -m pip install -e ".[test]"
-```
-
-Быстрый тестовый прогон без внешнего LLM:
-
-```powershell
-py Main.py run --provider fake --output-dir reports/smoke
+cd Bot_for_anal_rec
+py -m pip install -e ".[test,reports]"
+py tools/restore_snapshot.py
+py tools/restore_snapshot.py --check
 py -m pytest -q
 ```
 
-Полный Aho-отчет:
+Требуется Python 3.11+. В Linux/macOS замените `py` на `python3`. Для PNG нужен Arial или DejaVu Sans (Debian/Ubuntu: `fonts-dejavu-core`).
+
+Восстановление не обращается к сети и не вызывает LLM. Три gzip-снимка в [data/snapshots](data/snapshots/manifest.json) восстанавливают:
+
+- `data/input/clinical_recommendations.json` — корпус рекомендаций;
+- `data/input/drugs.json` — справочник MedIQ;
+- `reports/llm/llm_review_cases.json` — подготовленные кейсы и блоки.
+
+Скрипт проверяет SHA-256; уже существующий файл с другим содержимым сохраняет и сообщает об ошибке. Распакованные файлы игнорируются Git. Архивы занимают около 59 МБ, распакованные данные — 549 МБ.
+
+## Быстрый прогон без API
 
 ```powershell
-py Main.py aho-report --output reports/aho/host_words_by_search_word.json --workers 16
+py Main.py run --provider fake --texts data/samples/clinical.json --markers data/samples/markers.json --blacklist data/samples/blacklist.json --preparations data/samples/preparations.json --filter-file data/samples/manual_filters.csv --output-dir reports/smoke
 ```
 
-Docker-команды:
+Это проверка программы на маленьких примерах; она не измеряет качество реальной LLM.
+
+## Готовые результаты и пересборка
+
+- [Основной JSON](reports/llm/openrouter_all_results.json): 4 121 блок, 5 688 case-level ответов, метрики на 143 gold-случаях.
+- [CSV](reports/llm/openrouter_all_results.csv): 488 документов, UTF-8 с BOM, разделитель `;`.
+- [Экспертные страницы](reports/expert_review/index.html): 3 071 рекомендация и 115 противопоказаний после фильтра исключений.
+- [Gold-страницы](reports/gold_review/index.html): 4 086 блоков.
+- [Ручная разметка](reports/llm/llm_gold_40.json), [исключения](reports/llm/excluded_preparations.json), [фильтры](reports/aho/host_word_filters.json).
+
+HTML открываются локально после клонирования; они содержат CSS/JS и данные. Изменения сохраняются в localStorage браузера. Экспортируйте JSON кнопкой на странице для резервного копирования и переноса разметки.
+
+Пересборка из восстановленных данных без новых платных вызовов:
 
 ```powershell
-docker compose build app
-docker compose run --rm aho
-docker compose run --rm g4f-smoke
+py tools/build_openrouter_report_artifacts.py
+py tools/build_expert_review_pages.py
+py tools/build_gold_review_pages.py
 ```
 
-## OpenRouter
+Генераторы перезаписывают производные CSV, PNG и HTML. Основной JSON ответов и ручная разметка остаются исходными данными. Файл `openrouter_all_results.current.json` синхронизирован с итоговым; старый опубликованный промежуточный файл сохранён под именем `openrouter_all_results.checkpoint-20260504.json`.
 
-Секреты хранятся локально и не коммитятся:
+В CSV счётчики MedIQ/Blacklist/маркеров считают уникальные названия внутри каждого документа. На инфографике источников считаются все совпадения внутри оценённых кейсов; эти показатели различаются.
+
+## Новые OpenRouter-запросы
 
 ```powershell
 Copy-Item config/openrouter.env.example config/openrouter.env
 notepad config/openrouter.env
 ```
 
-Ожидаемые переменные:
-
 ```text
 OPENROUTER_API_KEY=...
-OPENROUTER_MODEL=openai/gpt-5.4
+OPENROUTER_MODEL=openai/gpt-5.4-mini
 ```
 
-Запуск gold-проверки:
-
 ```powershell
-py reports\llm\run_openrouter_gold40.py --limit 40
+py reports/llm/run_openrouter_all.py --limit 100
+py reports/llm/run_openrouter_gold40.py --limit 40
 ```
 
-Запуск полного OpenRouter-прогона:
+`--limit` у полного runner обязателен и ограничивает новые вызовы. Возобновление по умолчанию сохраняет ответы предыдущих моделей и промптов. Итоговый файл смешанный: 4 038 блоков GPT-5.4-mini, 80 GPT-5.4 и 3 GPT-4-turbo по метаданным запросов. Поэтому общие метрики не являются отдельным сравнительным тестом mini.
+
+Ключи и env-файлы локальны и не коммитятся. Новый платный прогон не нужен для воспроизведения сохранённых отчётов.
+
+## Перестроение поиска и кейсов
+
+Готовые отфильтрованные результаты уже включены. Для повторения самого раннего этапа после восстановления входных данных:
 
 ```powershell
-py reports\llm\run_openrouter_all.py --limit 100
-```
-
-## Ручные фильтры и результаты в Git
-
-В репозиторий должны попадать:
-
-- `config/manual_filters.csv`
-- `data/samples/manual_filters.csv`
-- `reports/aho/host_word_filters.json`
-- `reports/aho/host_word_filters_parts/*.json`
-- `reports/llm/excluded_preparations.json`
-- `reports/llm/llm_gold_40*.json`
-- `reports/llm/openrouter_gold40*.json`
-- `reports/llm/openrouter_all_results*.json`
-
-Причина: ручные фильтры, gold-разметка и результаты OpenRouter являются накопленной работой. Без Git такие файлы трудно восстановить.
-
-В репозиторий не должны попадать:
-
-- API-ключи и `*.env`.
-- Логи dashboard/server.
-- Python cache и pytest cache.
-- Сырые отчеты больше лимита GitHub 100 MB.
-- Временные partial JSONL.
-- Локальная папка `old/`.
-
-## Структура
-
-- `Main.py` - локальная точка входа.
-- `src/anal_russia_klinik/` - основной код.
-- `src/bot_for_anal_rec/` - совместимость со старым именем пакета.
-- `config/` - ручные фильтры и локальные настройки.
-- `data/input/` - крупные входные JSON-файлы.
-- `data/samples/` - маленькие фикстуры для тестов.
-- `reports/aho/` - Aho-отчеты, dashboard wrappers, host-word фильтры.
-- `reports/llm/` - LLM-кейсы, gold-разметка, OpenRouter-прогоны, dashboard wrappers.
-- `docs/` - архитектура, операции, память агента, решения.
-- `tests/` - pytest-проверки.
-
-## Важные команды
-
-```powershell
-py Main.py --help
-py Main.py run --provider fake --output-dir reports/smoke
 py Main.py aho-report --output reports/aho/host_words_by_search_word.json --workers 16
-py reports\aho\filter_detailed_host_words.py
-py reports\aho\group_filtered_locations.py
-py reports\llm\build_llm_review_cases.py --window-chars 2500
-py reports\llm\run_openrouter_gold40.py --limit 40
-py reports\llm\run_openrouter_all.py --limit 100
-py -m pytest -q
+py reports/aho/filter_detailed_host_words.py
+py reports/aho/group_filtered_locations.py
+py reports/llm/build_llm_review_cases.py --window-chars 2500
 ```
 
-## GitHub
+Полный сырой Aho-отчёт занимает около 2 ГБ, а частичные результаты требуют дополнительного места. Перестроение кейсов заменяет восстановленный снимок; для точного воспроизведения опубликованных итогов используйте исходный снимок.
 
-Целевой репозиторий:
-
-```text
-https://github.com/TryDotAtwo/Anal_Russia_Klinik2025
-```
-
-Проверка remote:
+Docker-вариант Aho после восстановления:
 
 ```powershell
-git remote -v
+docker compose build app
+docker compose run --rm aho
 ```
 
-Если `origin` указывает на старый репозиторий:
+Docker при публикации комплекта не проверялся.
 
-```powershell
-git remote set-url origin https://github.com/TryDotAtwo/Anal_Russia_Klinik2025.git
-```
+## Структура и политика данных
 
-## Ограничения
+- `Main.py` — точка входа; `src/anal_russia_klinik/` — основной пакет.
+- `data/input/` — входные словари и корпус; `data/snapshots/` — сжатые снимки и SHA-256.
+- `reports/aho/` — фильтры и результаты словарного поиска.
+- `reports/llm/` — gold-разметка, исключения, ответы и отчёты.
+- `reports/expert_review/`, `reports/gold_review/` — автономные страницы ручной проверки.
+- `tools/` — восстановление снимков и генераторы; `tests/` — pytest.
+- `docs/agent-memory.md` — память проекта; `docs/operations-log.md` — существенные изменения.
 
-GitHub отклоняет обычные файлы больше 100 MB. Поэтому крупные воспроизводимые отчеты не коммитятся напрямую. Для таких файлов нужен локальный пересчет, release artifact или Git LFS.
-
-Текущие крупные локальные файлы:
-
-- `reports/aho/host_words_by_search_word.json`
-- `reports/llm/llm_review_cases.json`
-- `data/input/clinical_recommendations.json`
-
-## Память проекта
-
-Долговременная память агента хранится в `docs/agent-memory.md`. При значимых изменениях нужно обновлять `docs/agent-memory.md`, `docs/operations-log.md` или профильный документ в `docs/`.
-
-## Локальные производные артефакты: инфографика и CSV
-
-CSV, PNG и `tools/build_openrouter_report_artifacts.py` имеются в локальной рабочей копии, но на 16 сентября 2026 отсутствуют в GitHub `main`. Команда пересборки ниже относится к этой локальной копии. Опубликованный источник итогов — `reports/llm/openrouter_all_results.json`.
-
-Производный отчет построен без изменения исходного `reports/llm/openrouter_all_results.json`.
-
-Локальные изображения: `reports/llm/infographic_slide_1.png`, `infographic_slide_2.png`, `infographic_slide_3.png`.
-
-### Основные итоги накопленного отчёта
-
-| Параметр | Значение |
-|---|---:|
-| Модель последнего запуска | `openai/gpt-5.4-mini` |
-| Prompt version | `llm-review-v3-multi` |
-| Блоки OpenRouter | 4 121 |
-| Case-level оценки | 5 688 |
-| Клинические рекомендации в CSV | 488 |
-| Label accuracy на gold | 88.1% |
-| Recommendation strength accuracy | 81.1% |
-| Evidence level accuracy | 81.8% |
-
-### Как читать оценку качества
-
-Метрики рассчитаны на 143 вручную размеченных случаях: класс — 126/143, УУР — 116/143, УДД — 117/143. Совпадение отсутствующих УУР/УДД также засчитывается. Независимость этой выборки от настройки промптов не подтверждена.
-
-Накопленный файл содержит 4 038 блоков с моделью запроса `openai/gpt-5.4-mini`, 80 — `openai/gpt-5.4`, 3 — `openai/gpt-4-turbo`. Возобновление сохраняет старые ответы даже при смене модели или промпта. Поэтому итоговые метрики нельзя приписывать только mini; старые gold-прогоны с другими выборками не являются прямым сравнением моделей.
-
-`--limit` у `run_openrouter_all.py` обязателен и задаёт число новых вызовов. По умолчанию используется возобновление. Для реального прогона необходим локальный `reports/llm/llm_review_cases.json`, который не входит в Git из-за размера.
-
-### Сколько найдено LLM-классов
-
-| Класс | Количество |
-|---|---:|
-| Рекомендации | 3 088 |
-| Противопоказания | 116 |
-| Упоминания литературы | 686 |
-| Ложные совпадения / ошибки | 1 794 |
-| Неясно | 4 |
-
-### Словарные источники: суммы столбцов локального CSV
-
-| Источник | Количество совпадений |
-|---|---:|
-| MedIQ | 1 925 |
-| Blacklist | 517 |
-| Маркеры | 367 |
-
-### CSV-таблица
-
-Готовая таблица: `reports/llm/openrouter_all_results.csv`.
-
-Формат: UTF-8 with BOM, разделитель `;`, строки агрегированы по ID клинической рекомендации. Колонки включают ID, название, МКБ-10, возраст, разработчика, дату размещения, статус, ссылку, уровни рекомендаций, счетчики MedIQ/Blacklist/маркеров и списки найденных терминов.
-
-Уровни рекомендаций нормализуются перед выводом: кириллические `А/В/С` приводятся к латинским `A/B/C`, пустые `null`-части удаляются.
-
-Повторная сборка:
-
-```powershell
-py tools\build_openrouter_report_artifacts.py
-```
+В Git сохраняются ручные фильтры и метки, исключения, полезные ответы и воспроизводимые снимки. Секреты, env-файлы, логи, кеши, временные файлы и сырой 2-ГБ Aho-отчёт исключены.

@@ -204,7 +204,7 @@ def build_block_messages(block: dict[str, Any]) -> list[dict[str, str]]:
     # Extract case_ids from case_spans
     case_spans = block.get("context", {}).get("case_spans", [])
     case_ids = [span.get("case_id") for span in case_spans if span.get("case_id")]
-    
+
     payload = {
         "task": block.get("llm_payload", {}).get("task", "classify_clinical_recommendation_mention_block"),
         "block_id": block["block_id"],
@@ -336,7 +336,7 @@ def max_tokens_for_block(block: dict[str, Any]) -> int:
     if os.getenv("OPENROUTER_MAX_TOKENS"):
         return int(os.environ["OPENROUTER_MAX_TOKENS"])
     case_count = max(1, len(block.get("case_ids") or block.get("context", {}).get("case_spans", [])))
-    return max(1200, 450 + case_count * 350)
+    return max(1200, 550 + case_count * 550)
 
 
 def _base_url(base_url: str | None = None) -> str:
@@ -359,6 +359,32 @@ def _safe_key_status(api_key: str, base_url: str | None = None) -> dict[str, Any
         return openrouter_key_status(api_key, base_url)
     except Exception as exc:  # pragma: no cover - network diagnostics only
         return {"error": str(exc)}
+
+
+def write_json_atomic(path: str | Path, data: dict[str, Any], *, indent: int = 2) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    tmp_path = path.with_suffix(path.suffix + ".tmp")
+    tmp_path.write_text(json.dumps(data, ensure_ascii=False, indent=indent), encoding="utf-8")
+    tmp_path.replace(path)
+
+
+def backup_once(path: str | Path) -> Path | None:
+    path = Path(path)
+    if not path.exists():
+        return None
+
+    backup_dir = path.parent / "backups"
+    backup_dir.mkdir(parents=True, exist_ok=True)
+
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    backup_path = backup_dir / f"{path.name}.{ts}.bak"
+
+    backup_path.write_bytes(path.read_bytes())
+    return backup_path
+
+
 
 
 def _money_delta(before: dict[str, Any] | None, after: dict[str, Any] | None) -> dict[str, Any]:
@@ -479,13 +505,13 @@ def complete_openrouter(block: dict[str, Any], *, api_key: str, model: str, base
     max_tokens=max_tokens,
     raw_response=raw_response,
 )
-    
+
     # Handle both old single-object format and new predictions array format
     if "predictions" in raw_json and isinstance(raw_json["predictions"], list):
         predictions_dict = _normalize_predictions(raw_json["predictions"], block)
     else:
         predictions_dict = expand_single_prediction_to_cases(raw_json, block)
-    
+
     result = {
         "predictions": predictions_dict,
         "_openrouter": {
@@ -733,7 +759,11 @@ def run_gold_openrouter(
     blocks, excluded_stats = filter_blocks_for_llm(raw_blocks, excluded_keys)
     gold_items = read_json(gold_path)["items"][:limit]
     visible_gold_items = _filter_gold_items_for_blocks(gold_items, blocks)
+
     output_path = Path(output_path)
+    backup_path = backup_once(output_path)
+
+
     predictions = {}
     if resume and output_path.exists():
         old_report = read_json(output_path)
@@ -783,7 +813,7 @@ def run_gold_openrouter(
                 "predictions": predictions,
                 "score": score_gold(checkpoint_visible_gold_items, predictions),
             }
-            write_json(output_path, report, indent=2)
+            write_json_atomic(output_path, report, indent=2)
     report = {
         "schema_version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -801,7 +831,7 @@ def run_gold_openrouter(
         "predictions": predictions,
         "score": score_gold(visible_gold_items, predictions),
     }
-    write_json(output_path, report, indent=2)
+    write_json_atomic(output_path, report, indent=2)
     return report
 
 
@@ -828,6 +858,7 @@ def run_openrouter_all(
 
     review_cases_path = Path(review_cases_path)
     output_path = Path(output_path)
+    backup_path = backup_once(output_path)
 
     if excluded_preparations_path is None:
         excluded_preparations_path = review_cases_path.with_name("excluded_preparations.json")
@@ -843,6 +874,22 @@ def run_openrouter_all(
     gold_items = read_json(gold_path).get("items", []) if gold_path and Path(gold_path).exists() else []
 
     predictions = load_openrouter_prediction_sources(output_path.parent, output_path) if resume else {}
+
+    if resume and output_path.exists():
+        old_report = read_json(output_path)
+        old_predictions = old_report.get("predictions", {})
+        if isinstance(old_predictions, dict):
+            old_count = len(old_predictions)
+            loaded_count = len(predictions)
+            if old_count >= 100 and loaded_count < old_count * 0.9:
+                raise RuntimeError(
+                    "resume_loaded_too_few_predictions | "
+                    f"output_path={output_path} | "
+                    f"old_count={old_count} | "
+                    f"loaded_count={loaded_count} | "
+                    "Refusing to overwrite result file."
+                )
+
 
     candidates, gold_missing_count, pending_visible_count = _all_runner_candidates(
         blocks,
@@ -918,6 +965,7 @@ def run_openrouter_all(
             **excluded_stats,
             "predictions": predictions,
             "score": score_gold(visible_gold_items, predictions) if visible_gold_items else {},
+            "backup_path": str(backup_path) if backup_path else None,
         }
 
     for index, block_id in enumerate(selected_block_ids, start=1):
@@ -991,8 +1039,8 @@ def run_openrouter_all(
                 )
 
         if save_each:
-            write_json(output_path, build_report(selected_block_ids[:index]), indent=2)
+            write_json_atomic(output_path, build_report(selected_block_ids[:index]), indent=2)
 
     report = build_report(selected_block_ids)
-    write_json(output_path, report, indent=2)
+    write_json_atomic(output_path, report, indent=2)
     return report

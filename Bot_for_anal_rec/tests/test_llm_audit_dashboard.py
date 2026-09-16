@@ -246,7 +246,7 @@ def test_llm_audit_dashboard_request_body_uses_dynamic_token_budget(tmp_path: Pa
     state = AuditState(tmp_path)
     payload = state.case_payload({"block_id": ["block:1"]})
 
-    assert payload["request_body"]["max_tokens"] == 1850
+    assert payload["request_body"]["max_tokens"] == 2750
 
 
 def test_llm_audit_dashboard_update_gold_creates_item_from_review_block(tmp_path: Path) -> None:

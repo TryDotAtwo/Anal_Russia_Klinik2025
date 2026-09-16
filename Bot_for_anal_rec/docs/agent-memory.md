@@ -252,3 +252,12 @@
 - Git ignore policy keeps secrets and local runtime files out of Git: `*.env`, `config/openrouter.env`, dashboard logs, `__pycache__`, `.pytest_cache`, `.playwright-mcp`, `old/`, `reports/aho/partials/`, and local smoke/g4f output folders.
 - GitHub ordinary-file limit blocks large generated/source files from normal push: `reports/aho/host_words_by_search_word.json` (~2GB), `reports/llm/llm_review_cases.json` (~306MB), and `data/input/clinical_recommendations.json` (>100MB). Use local rebuild, release artifact, or Git LFS for these files.
 - Remote check on 2026-05-05 found `origin=https://github.com/TryDotAtwo/Bot_for_anal_rec.git`; update command for requested repository is `git remote set-url origin https://github.com/TryDotAtwo/Anal_Russia_Klinik2025.git`.
+
+## 2026-09-16 self-contained publication
+
+- Included gzip snapshots of clinical_recommendations.json, drugs.json and llm_review_cases.json with byte sizes and SHA-256 in data/snapshots/manifest.json. restore_snapshot.py restores offline and refuses to overwrite differing user files.
+- Published artifact/expert/gold generators, HTML, PNG, CSV and their tests. Added reports optional dependency (Pillow); PNG needs Arial or DejaVu Sans. Source result JSON remains byte-identical to May 5.
+- Published pre-existing local runner fixes: atomic result replacement, backups and resume-count guard. current.json now equals final; historical remote checkpoint retained under an explicit dated name.
+- Rebuild verified: 488 CSV rows, 5688 case predictions, expert=3071 recommendations/115 contraindications, gold=4086 blocks/11 pages, exclusions=36.
+- Source occurrence counts 4307/1431/716 differ from sums of per-document unique terms in CSV (1925/517/367); both are valid distinct metrics.
+- Snapshot restore/check, sample fake pipeline and 37 tests passed. No new paid LLM requests; Docker not tested.

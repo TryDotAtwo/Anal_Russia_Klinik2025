@@ -69,6 +69,10 @@ reports/aho/host_words_compact.before_*.json
 # LLM reports: keep manual labels and useful OpenRouter outputs, ignore huge reproducible case build.
 reports/llm/reports/
 reports/llm/llm_review_cases.json
+reports/llm/backups/
+reports/llm/openrouter_debug/
+reports/llm/**/*.tmp
+reports/llm/infographic_slide_*.svg
 !reports/llm/README.md
 !reports/llm/build_llm_review_cases.py
 !reports/llm/llm_audit_dashboard.py
@@ -90,3 +94,7 @@ data/input/*_files/
 # Large GitHub-blocking JSON inputs.
 data/input/clinical_recommendations.json
 data/input/drugs.json
+
+# Local Python environments
+.venv/
+venv/

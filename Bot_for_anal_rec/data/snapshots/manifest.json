@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "description": "Inputs and review cases used by the saved May 2026 report; packaged 2026-09-16.",
+  "files": [
+    {
+      "path": "data/input/clinical_recommendations.json",
+      "archive": "data/snapshots/clinical_recommendations.json.gz",
+      "size": 139918025,
+      "sha256": "8f46941b50e80f102f06b12d3e8ba15734bdce8382683c72c4f05224618cac82",
+      "archive_size": 31745730,
+      "archive_sha256": "34411aee6445bbefaa5108d1bfcd7e27e46293e88de67f41099bcd58261a08b6"
+    },
+    {
+      "path": "data/input/drugs.json",
+      "archive": "data/snapshots/drugs.json.gz",
+      "size": 103418116,
+      "sha256": "161ca2b97d89b71729d947fe5d3993e88b18a1188ae1d20568b4fe0c829f9cf3",
+      "archive_size": 5119730,
+      "archive_sha256": "3b903b17a7374d0f621dc583aaf9fc841ea1d3353e5285b37baeac3f65d14a66"
+    },
+    {
+      "path": "reports/llm/llm_review_cases.json",
+      "archive": "data/snapshots/llm_review_cases.json.gz",
+      "size": 306123895,
+      "sha256": "08cf25cc3696218566db9b0c12c26f673cc005122e96a4184acd6e373352b6fd",
+      "archive_size": 21903597,
+      "archive_sha256": "29f7ce17639b69ffbf04c1d20926f42df67a0dd66f3fc00b07bfad6f98d1e415"
+    }
+  ]
+}
